@@ -1,0 +1,6 @@
+framework module Pods_desafio_ios_fellipe_bravo {
+  umbrella header "Pods-desafio-ios-fellipe-bravo-umbrella.h"
+
+  export *
+  module * { export * }
+}

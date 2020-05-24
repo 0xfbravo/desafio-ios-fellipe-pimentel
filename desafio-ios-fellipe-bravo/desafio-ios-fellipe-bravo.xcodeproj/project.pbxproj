@@ -17,6 +17,7 @@
 		07830BE7247AE7C5002A8FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07830BE5247AE7C5002A8FC6 /* LaunchScreen.storyboard */; };
 		07830BF2247AE7C5002A8FC6 /* desafio_ios_fellipe_bravoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830BF1247AE7C5002A8FC6 /* desafio_ios_fellipe_bravoTests.swift */; };
 		07830BFD247AE7C5002A8FC6 /* desafio_ios_fellipe_bravoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830BFC247AE7C5002A8FC6 /* desafio_ios_fellipe_bravoUITests.swift */; };
+		07830C0C247AFDB4002A8FC6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C0B247AFDB4002A8FC6 /* Colors.swift */; };
 		6C76828A9CCCB5D329309D01 /* Pods_desafio_ios_fellipe_bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CF837D589D9E568978BD99 /* Pods_desafio_ios_fellipe_bravo.framework */; };
 		E33523CAC72878BAE61933E5 /* Pods_desafio_ios_fellipe_bravoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD4333931350BBEF514A5A8 /* Pods_desafio_ios_fellipe_bravoTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		07830BF8247AE7C5002A8FC6 /* desafio-ios-fellipe-bravoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-fellipe-bravoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07830BFC247AE7C5002A8FC6 /* desafio_ios_fellipe_bravoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_fellipe_bravoUITests.swift; sourceTree = "<group>"; };
 		07830BFE247AE7C5002A8FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07830C0B247AFDB4002A8FC6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0AD4333931350BBEF514A5A8 /* Pods_desafio_ios_fellipe_bravoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_fellipe_bravoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2724B1551BF64A7D389F9C2B /* Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E24645D2F52957A55018955 /* Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,11 +120,11 @@
 		07830BD6247AE7C0002A8FC6 /* desafio-ios-fellipe-bravo */ = {
 			isa = PBXGroup;
 			children = (
+				07830C0A247AFD97002A8FC6 /* assets */,
 				07830BD7247AE7C0002A8FC6 /* AppDelegate.swift */,
 				07830BD9247AE7C0002A8FC6 /* SceneDelegate.swift */,
 				07830BDB247AE7C0002A8FC6 /* ViewController.swift */,
 				07830BDD247AE7C0002A8FC6 /* Main.storyboard */,
-				07830BE3247AE7C5002A8FC6 /* Assets.xcassets */,
 				07830BE5247AE7C5002A8FC6 /* LaunchScreen.storyboard */,
 				07830BE8247AE7C5002A8FC6 /* Info.plist */,
 				07830BE0247AE7C0002A8FC6 /* desafio_ios_fellipe_bravo.xcdatamodeld */,
@@ -146,6 +148,15 @@
 				07830BFE247AE7C5002A8FC6 /* Info.plist */,
 			);
 			path = "desafio-ios-fellipe-bravoUITests";
+			sourceTree = "<group>";
+		};
+		07830C0A247AFD97002A8FC6 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				07830BE3247AE7C5002A8FC6 /* Assets.xcassets */,
+				07830C0B247AFDB4002A8FC6 /* Colors.swift */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 		955D73AD340357B5D54C38AB /* Frameworks */ = {
@@ -375,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07830BE2247AE7C0002A8FC6 /* desafio_ios_fellipe_bravo.xcdatamodeld in Sources */,
+				07830C0C247AFDB4002A8FC6 /* Colors.swift in Sources */,
 				07830BDC247AE7C0002A8FC6 /* ViewController.swift in Sources */,
 				07830BD8247AE7C0002A8FC6 /* AppDelegate.swift in Sources */,
 				07830BDA247AE7C0002A8FC6 /* SceneDelegate.swift in Sources */,

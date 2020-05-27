@@ -11,7 +11,7 @@
         <!--Most Expensive Hq View Controller-->
         <scene sceneID="HjQ-Hw-d1T">
             <objects>
-                <viewController id="wY2-3a-io0" customClass="MostExpensiveHqViewController" customModule="desafio_ios_fellipe_bravo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MostExpensiveHqViewController" id="wY2-3a-io0" customClass="MostExpensiveHqViewController" customModule="desafio_ios_fellipe_bravo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dHh-Hh-EAd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

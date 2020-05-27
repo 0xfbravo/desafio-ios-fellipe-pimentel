@@ -8,6 +8,11 @@
 
 import Foundation
 
-final class HeroesListRouter: BaseRouter, HeroesListRouterProtocol {
+final class HeroesListRouter: BaseRouter {
+    
+}
+
+// MARK: - Protocol
+extension HeroesListRouter: HeroesListRouterProtocol {
     
 }

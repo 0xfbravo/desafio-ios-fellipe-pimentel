@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeroesListViewController: UIViewController, HeroesListViewProtocol {
+class HeroesListViewController: UIViewController {
     
     var presenter: HeroesListPresenterProtocol!
     
@@ -18,4 +18,9 @@ class HeroesListViewController: UIViewController, HeroesListViewProtocol {
         presenter = HeroesListFeature.assemblePresenter(view: self)
     }
 
+}
+
+// MARK: - Protocol
+extension HeroesListViewController: HeroesListViewProtocol {
+    
 }

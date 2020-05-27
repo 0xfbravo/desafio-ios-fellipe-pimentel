@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class HeroesListRepository: HeroesListRepositoryProtocol {
+final class HeroesListRepository {
 
     private var localDataManager: HeroesListLocalDataManagerProtocol
     private var remoteDataManager: HeroesListRemoteDataManagerProtocol
@@ -17,5 +17,10 @@ final class HeroesListRepository: HeroesListRepositoryProtocol {
         self.localDataManager = localDataManager
         self.remoteDataManager = remoteDataManager
     }
+    
+}
+
+// MARK: - Protocol
+extension HeroesListRepository: HeroesListRepositoryProtocol {
     
 }

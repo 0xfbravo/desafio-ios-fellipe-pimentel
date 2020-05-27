@@ -8,12 +8,17 @@
 
 import Foundation
 
-final class HeroesListInteractor: HeroesListInteractorProtocol {
+final class HeroesListInteractor {
     
     var repository: HeroesListRepositoryProtocol
     
     init(repository: HeroesListRepositoryProtocol) {
         self.repository = repository
     }
+    
+}
+
+// MARK: - Protocol
+extension HeroesListInteractor: HeroesListInteractorProtocol {
     
 }

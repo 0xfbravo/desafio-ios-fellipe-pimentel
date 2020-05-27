@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class HeroesListPresenter: HeroesListPresenterProtocol {
+final class HeroesListPresenter {
     
     weak var view: HeroesListViewProtocol!
     var router: HeroesListRouterProtocol!
@@ -20,4 +20,9 @@ final class HeroesListPresenter: HeroesListPresenterProtocol {
         self.interactor = interactor
     }
     
+}
+
+// MARK: - Protocol
+extension HeroesListPresenter: HeroesListPresenterProtocol {
+
 }

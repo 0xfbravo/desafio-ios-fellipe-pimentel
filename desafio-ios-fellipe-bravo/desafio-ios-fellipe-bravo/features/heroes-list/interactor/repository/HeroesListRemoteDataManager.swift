@@ -8,6 +8,11 @@
 
 import Foundation
 
-final class HeroesListRemoteDataManager: HeroesListRemoteDataManagerProtocol {
+final class HeroesListRemoteDataManager {
+    
+}
+
+// MARK: - Protocol
+extension HeroesListRemoteDataManager: HeroesListRemoteDataManagerProtocol {
     
 }

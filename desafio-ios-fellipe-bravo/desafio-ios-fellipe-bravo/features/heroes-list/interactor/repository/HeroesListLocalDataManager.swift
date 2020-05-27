@@ -8,6 +8,11 @@
 
 import Foundation
 
-final class HeroesListLocalDataManager: HeroesListLocalDataManagerProtocol {
+final class HeroesListLocalDataManager {
+    
+}
+
+// MARK: - Protocol
+extension HeroesListLocalDataManager: HeroesListLocalDataManagerProtocol {
     
 }

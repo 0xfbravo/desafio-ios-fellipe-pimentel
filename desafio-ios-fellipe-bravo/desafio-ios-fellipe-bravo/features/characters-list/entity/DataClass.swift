@@ -7,7 +7,7 @@ import Foundation
 
 struct DataClass: Codable {
 
-    let offset, limit, total, count: Int64
+    let offset, limit, total, count: Int
     let results: [CharacterInformation]
 
 }

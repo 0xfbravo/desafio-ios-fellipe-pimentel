@@ -20,33 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2f1db1e-5255-41c5-bbaa-8d96495dd917" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/view/CharacterViewCell.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/core/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/core/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/HeroesListFeature.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/CharactersListFeature.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/HeroesListProtocols.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/CharactersListProtocols.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/Comics.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/Comics.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/ComicsItem.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/ComicsItem.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/DataClass.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/DataClass.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/HeroInformation.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/CharacterInformation.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/HeroListResponse.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/CharactersListResponse.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/Stories.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/Stories.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/StoriesItem.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/StoriesItem.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/Thumbnail.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/Thumbnail.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/entity/URLElement.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/URLElement.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/interactor/HeroesListInteractor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/interactor/CharactersListInteractor.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/presenter/HeroesListPresenter.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/presenter/CharactersListPresenter.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/repository/HeroesListRepository.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/repository/CharactersListRepository.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/repository/local/HeroesListLocalDataManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/repository/local/CharactersListLocalDataManager.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/repository/remote/HeroesListEndpoints.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/repository/remote/CharactersListEndpoints.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/repository/remote/HeroesListRemoteDataManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/repository/remote/CharactersListRemoteDataManager.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/router/HeroesListRouter.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/router/CharactersListRouter.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/view/Base.lproj/HeroesList.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/view/Base.lproj/CharactersList.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/view/HeroViewCell.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/view/HeroViewCell.xib" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/view/CharacterViewCell.xib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/heroes-list/view/HeroesListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/view/CharactersListViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/splashscreen/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/splashscreen/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/CharactersListProtocols.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/CharactersListProtocols.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/CharacterInformation.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/CharacterInformation.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/CharactersListResponse.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/CharactersListResponse.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/Comics.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/Comics.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/DataClass.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/DataClass.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/Stories.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity/Stories.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/presenter/CharactersListPresenter.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/presenter/CharactersListPresenter.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/repository/remote/CharactersListRemoteDataManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/repository/remote/CharactersListRemoteDataManager.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,42 +119,42 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1590716739627" />
-    <state width="1638" height="346" key="GridCell.Tab.0.bottom" timestamp="1590726894089">
+    <state width="1638" height="346" key="GridCell.Tab.0.bottom" timestamp="1590733714361">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894089" />
-    <state width="1638" height="346" key="GridCell.Tab.0.center" timestamp="1590726894089">
+    <state width="1638" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714361" />
+    <state width="1638" height="346" key="GridCell.Tab.0.center" timestamp="1590733714361">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894089" />
-    <state width="1638" height="346" key="GridCell.Tab.0.left" timestamp="1590726894088">
+    <state width="1638" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714361" />
+    <state width="1638" height="346" key="GridCell.Tab.0.left" timestamp="1590733714361">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894088" />
-    <state width="1638" height="346" key="GridCell.Tab.0.right" timestamp="1590726894089">
+    <state width="1638" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714361" />
+    <state width="1638" height="346" key="GridCell.Tab.0.right" timestamp="1590733714361">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894089" />
-    <state width="1638" height="346" key="GridCell.Tab.1.bottom" timestamp="1590726894089">
+    <state width="1638" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714361" />
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom" timestamp="1590733714362">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894089" />
-    <state width="1638" height="346" key="GridCell.Tab.1.center" timestamp="1590726894089">
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714362" />
+    <state width="1638" height="346" key="GridCell.Tab.1.center" timestamp="1590733714361">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894089" />
-    <state width="1638" height="346" key="GridCell.Tab.1.left" timestamp="1590726894089">
+    <state width="1638" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714361" />
+    <state width="1638" height="346" key="GridCell.Tab.1.left" timestamp="1590733714361">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894089" />
-    <state width="1638" height="346" key="GridCell.Tab.1.right" timestamp="1590726894089">
+    <state width="1638" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714361" />
+    <state width="1638" height="346" key="GridCell.Tab.1.right" timestamp="1590733714362">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590726894089" />
-    <state x="541" y="169" width="1101" height="735" key="find.popup" timestamp="1590727425782">
+    <state width="1638" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590733714362" />
+    <state x="541" y="169" width="1101" height="735" key="find.popup" timestamp="1590733164026">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="541" y="169" width="1101" height="735" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1590727425782" />
+    <state x="541" y="169" width="1101" height="735" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1590733164026" />
     <state x="570" y="455" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1590713739069">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

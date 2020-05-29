@@ -7,7 +7,7 @@ import Foundation
 
 struct CharacterInformation: Codable {
 
-    let id: Int64
+    let id: Int
     let name, resultDescription: String
     let modified: String // TODO: Should be a Date, but the format is strange and I can't convert right now
     let thumbnail: Thumbnail

@@ -17,9 +17,9 @@ final class CharactersListPresenter {
     var interactor: CharactersListInteractorProtocol!
 
     var disposeBag = DisposeBag()
-    var charactersList = PublishSubject<[CharacterInformation]>()
+    var charactersList = BehaviorRelay<[CharacterInformation]>(value: [])
     var offset = 0
-    var pagination = 20
+    var pageSize = 58
     
     init(view: CharactersListViewProtocol, router: CharactersListRouterProtocol, interactor: CharactersListInteractorProtocol) {
         self.view = view
@@ -34,13 +34,13 @@ extension CharactersListPresenter: CharactersListPresenterProtocol {
 
     func getCharactersList() {
         let currentOffset = self.offset
-        let nextOffset = self.offset + self.pagination
+        let nextOffset = self.offset + self.pageSize
 
         interactor
-                .getCharactersList(offset: currentOffset, limit: nextOffset)
+                .getCharactersList(offset: currentOffset, limit: pageSize)
                 .subscribe(onNext: { marvelCharactersList in
                     self.offset = nextOffset
-                    self.charactersList.onNext(marvelCharactersList)
+                    self.charactersList.accept(marvelCharactersList)
                     print(marvelCharactersList)
                 }, onError: { error in
                     print(error)

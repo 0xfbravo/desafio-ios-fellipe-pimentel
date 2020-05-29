@@ -7,9 +7,9 @@ import Foundation
 
 struct Comics: Codable {
 
-    let available: Int64
+    let available: Int
     let collectionURI: String
     let items: [ComicsItem]
-    let returned: Int64
+    let returned: Int
 
 }

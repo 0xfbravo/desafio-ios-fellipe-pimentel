@@ -27,7 +27,7 @@ final class CharactersListRemoteDataManager {
 // MARK: - Protocol
 extension CharactersListRemoteDataManager: CharactersListRemoteDataManagerProtocol {
     
-    func getCharactersList(offset: Int = 0, limit: Int = 20) -> Observable<CharactersListResponse> {
+    func getCharactersList(offset: Int, limit: Int) -> Observable<CharactersListResponse> {
         let parameters: [String: Any] = [
             "offset": offset,
             "limit": limit

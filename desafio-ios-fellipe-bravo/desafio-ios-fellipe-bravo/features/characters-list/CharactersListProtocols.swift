@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 // MARK: - View
 protocol CharactersListViewProtocol: class {
@@ -17,7 +18,7 @@ protocol CharactersListViewProtocol: class {
 // MARK: - Presenter
 protocol CharactersListPresenterProtocol {
     var disposeBag: DisposeBag { get }
-    var charactersList: PublishSubject<[CharacterInformation]> { get }
+    var charactersList: BehaviorRelay<[CharacterInformation]> { get }
 
     func getCharactersList()
 }

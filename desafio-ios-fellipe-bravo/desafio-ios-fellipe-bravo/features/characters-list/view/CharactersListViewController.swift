@@ -29,6 +29,10 @@ class CharactersListViewController: UIViewController {
     }
 
     // MARK: - UI
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+
     private func assembleUI() {
         charactersListTableView.rx.setDelegate(self).disposed(by: presenter.disposeBag)
 
@@ -39,6 +43,14 @@ class CharactersListViewController: UIViewController {
             (row: Int, item: CharacterInformation, cell: CharacterViewCell) in
             cell.assemble(characterInformation: item)
         }.disposed(by: presenter.disposeBag)
+
+        charactersListTableView.rx
+                .itemSelected
+                .map { indexPath in (indexPath, self.presenter.charactersList.value[indexPath.row]) }
+                .subscribe(onNext: { pair in
+                    self.presenter.handleOnCharacterSelected(characterInfo: pair.1)
+                })
+                .disposed(by: presenter.disposeBag)
 
         presenter.getCharactersList()
     }

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character Detail View Controller-->
+        <scene sceneID="qzT-kB-cdA">
+            <objects>
+                <viewController storyboardIdentifier="CharacterDetailViewController" id="yvo-h1-pOq" customClass="CharacterDetailViewController" customModule="desafio_ios_fellipe_bravo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RR7-Ll-We4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="f3x-HR-aZt" userLabel="image">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Fe-UR-Ipg" customClass="GradientView" customModule="desafio_ios_fellipe_bravo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="215" width="414" height="143.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBF-Fb-JYg" userLabel="name">
+                                        <rect key="frame" x="16" y="89" width="366" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
+                                        <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kBF-Fb-JYg" secondAttribute="bottom" constant="16" id="JUb-qr-wjB"/>
+                                    <constraint firstAttribute="trailing" secondItem="kBF-Fb-JYg" secondAttribute="trailing" constant="32" id="f21-hL-guU"/>
+                                    <constraint firstItem="kBF-Fb-JYg" firstAttribute="leading" secondItem="1Fe-UR-Ipg" secondAttribute="leading" constant="16" id="fQX-or-bIv"/>
+                                    <constraint firstItem="kBF-Fb-JYg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1Fe-UR-Ipg" secondAttribute="top" id="sm6-0F-m6e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="characterDescription" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-Z6-r3P">
+                                <rect key="frame" x="16" y="374.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uc3-Z6-r3P" firstAttribute="leading" secondItem="12W-JW-EBD" secondAttribute="leading" constant="16" id="0uG-av-4b1"/>
+                            <constraint firstItem="f3x-HR-aZt" firstAttribute="width" secondItem="RR7-Ll-We4" secondAttribute="width" id="4kA-H3-Rln"/>
+                            <constraint firstItem="1Fe-UR-Ipg" firstAttribute="centerX" secondItem="f3x-HR-aZt" secondAttribute="centerX" id="7wl-1I-tD5"/>
+                            <constraint firstItem="1Fe-UR-Ipg" firstAttribute="height" secondItem="f3x-HR-aZt" secondAttribute="height" multiplier="0.4" id="JmX-0P-0qh"/>
+                            <constraint firstItem="f3x-HR-aZt" firstAttribute="top" secondItem="RR7-Ll-We4" secondAttribute="top" id="Mxb-K1-NzH"/>
+                            <constraint firstItem="1Fe-UR-Ipg" firstAttribute="width" secondItem="f3x-HR-aZt" secondAttribute="width" id="Up3-xH-XV0"/>
+                            <constraint firstItem="12W-JW-EBD" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uc3-Z6-r3P" secondAttribute="bottom" id="e2C-aK-zwV"/>
+                            <constraint firstItem="12W-JW-EBD" firstAttribute="trailing" secondItem="uc3-Z6-r3P" secondAttribute="trailing" constant="16" id="eNY-qG-kfd"/>
+                            <constraint firstItem="f3x-HR-aZt" firstAttribute="centerX" secondItem="12W-JW-EBD" secondAttribute="centerX" id="fsf-OO-LAn"/>
+                            <constraint firstItem="f3x-HR-aZt" firstAttribute="height" secondItem="RR7-Ll-We4" secondAttribute="height" multiplier="0.4" id="hCb-gM-gqj"/>
+                            <constraint firstItem="1Fe-UR-Ipg" firstAttribute="bottom" secondItem="f3x-HR-aZt" secondAttribute="bottom" id="iIb-fp-rIw"/>
+                            <constraint firstItem="uc3-Z6-r3P" firstAttribute="top" secondItem="f3x-HR-aZt" secondAttribute="bottom" constant="16" id="pHl-ZU-SXz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="12W-JW-EBD"/>
+                    </view>
+                    <connections>
+                        <outlet property="characterDescription" destination="uc3-Z6-r3P" id="4PK-Qx-V2w"/>
+                        <outlet property="image" destination="f3x-HR-aZt" id="AEd-Pv-UzD"/>
+                        <outlet property="name" destination="kBF-Fb-JYg" id="cts-Gq-oCh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8M-uW-tru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2304" height="1408"/>
+    </resources>
+</document>

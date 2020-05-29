@@ -22,6 +22,7 @@ protocol CharactersListPresenterProtocol {
     var isGettingCharactersList: Bool { get }
 
     func getCharactersList()
+    func handleOnCharacterSelected(characterInfo: CharacterInformation)
 }
 
 // MARK: - Interactor
@@ -31,7 +32,7 @@ protocol CharactersListInteractorProtocol {
 
 // MARK: - Router
 protocol CharactersListRouterProtocol {
-    
+    func openDetails(of character: CharacterInformation)
 }
 
 // MARK: - DataManager

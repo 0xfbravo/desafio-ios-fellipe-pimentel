@@ -10,6 +10,7 @@ target 'desafio-ios-fellipe-bravo' do
   pod 'RxCocoa', '~> 5'
   pod 'RxAlamofire'
   pod 'Kingfisher', '~> 5.14'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
 
   target 'desafio-ios-fellipe-bravoTests' do
     inherit! :search_paths

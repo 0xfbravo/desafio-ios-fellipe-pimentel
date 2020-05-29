@@ -10,7 +10,7 @@ import UIKit
 
 class BaseRouter {
     
-    private let currentViewController: UIViewController
+    let currentViewController: UIViewController
     
     init(currentViewController: UIViewController) {
         self.currentViewController = currentViewController

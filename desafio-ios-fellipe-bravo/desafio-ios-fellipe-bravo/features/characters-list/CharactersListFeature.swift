@@ -9,11 +9,11 @@
 import UIKit
 
 final class CharactersListFeature {
-    
-    static let storyboardName = "CharactersList"
-    static let viewControllerIdentifier = "CharactersListViewController"
-    
-    static func assemblePresenter(view: CharactersListViewController) -> CharactersListPresenter {
+
+    public static let storyboardName = "CharactersList"
+    public static let viewControllerIdentifier = "CharactersListViewController"
+
+    public static func assemblePresenter(view: CharactersListViewController) -> CharactersListPresenter {
         let router = CharactersListRouter(currentViewController: view)
         let localDataManager = CharactersListLocalDataManager()
         let remoteDataManager = CharactersListRemoteDataManager()
@@ -21,8 +21,8 @@ final class CharactersListFeature {
         let interactor = CharactersListInteractor(repository: repository)
         return CharactersListPresenter(view: view, router: router, interactor: interactor)
     }
-    
-    static func assemble() -> CharactersListViewController {
+
+    public static func assemble() -> CharactersListViewController {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier) as! CharactersListViewController
         return view

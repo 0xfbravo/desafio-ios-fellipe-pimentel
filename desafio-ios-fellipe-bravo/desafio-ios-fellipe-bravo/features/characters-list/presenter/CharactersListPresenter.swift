@@ -54,4 +54,7 @@ extension CharactersListPresenter: CharactersListPresenterProtocol {
                 .disposed(by: disposeBag)
     }
 
+    func handleOnCharacterSelected(characterInfo: CharacterInformation) {
+        self.router.openDetails(of: characterInfo)
+    }
 }

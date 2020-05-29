@@ -14,5 +14,9 @@ final class CharactersListRouter: BaseRouter {
 
 // MARK: - Protocol
 extension CharactersListRouter: CharactersListRouterProtocol {
-    
+    func openDetails(of character: CharacterInformation) {
+        let feature = CharacterDetailFeature.assemble()
+        feature.presenter.characterDetail = character
+        currentViewController.present(feature, animated: true)
+    }
 }

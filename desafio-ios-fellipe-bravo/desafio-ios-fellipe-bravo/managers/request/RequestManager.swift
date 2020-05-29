@@ -12,13 +12,50 @@ import RxSwift
 import RxAlamofire
 
 final class RequestManager {
-    
+
+    private let encoder: JSONEncoder
+    private let decoder: JSONDecoder
+    private let marvelGatewayManager: MarvelGatewayManagerProtocol
+
+    init(encoder: JSONEncoder = JSONEncoder(),
+         decoder: JSONDecoder = JSONDecoder(),
+         marvelGatewayManager: MarvelGatewayManagerProtocol = MarvelGatewayManager()) {
+        self.encoder = encoder
+        self.decoder = decoder
+        self.marvelGatewayManager = marvelGatewayManager
+        self.encoder.dateEncodingStrategy = .formatted(self.marvelDateFormat)
+        self.decoder.dateDecodingStrategy = .formatted(self.marvelDateFormat)
+    }
+
+    // TODO: Convert strange Marvel's date format: 2014-04-29T14:18:17-0400
+    private let marvelDateFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'-0400'"
+        return formatter
+    }()
+
+    private func getBasicParameters() -> [String: Any] {
+        let requestTimestamp = Date()
+        let parameters: [String: Any] = [
+            "apikey": marvelGatewayManager.publicKey,
+            "ts": requestTimestamp,
+            "hash": "\(requestTimestamp)\(marvelGatewayManager.privateKey)\(marvelGatewayManager.publicKey)".md5
+        ]
+        return parameters
+    }
+
 }
 
 extension RequestManager: RequestManagerProtocol {
     
-    func doRequest(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, parameters: [String: Any]? = nil, encoding: ParameterEncoding = URLEncoding.default, headers: [String: String]? = nil) -> Observable<(HTTPURLResponse, Any)> {
-        return requestJSON(method, url, parameters: parameters, encoding: encoding, headers: headers).debug()
+    func doRequest(_ method: Alamofire.HTTPMethod, path: String, parameters: [String: Any]? = nil, encoding: ParameterEncoding = URLEncoding.default, headers: HTTPHeaders? = nil) -> Observable<Data> {
+        let url = "\(marvelGatewayManager.gatewayURL)\(path)"
+        var basicParameters = getBasicParameters()
+        if let customParameters = parameters {
+            basicParameters = basicParameters.merging(customParameters) { (current, _) in current }
+        }
+
+        return data(method, url, parameters: basicParameters, encoding: encoding, headers: headers)
     }
     
 }

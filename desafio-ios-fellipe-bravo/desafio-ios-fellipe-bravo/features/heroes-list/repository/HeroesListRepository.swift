@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 final class HeroesListRepository {
 
@@ -23,7 +24,7 @@ final class HeroesListRepository {
 // MARK: - Protocol
 extension HeroesListRepository: HeroesListRepositoryProtocol {
 
-    func getHeroesList(offset: Int, limit: Int) {
+    func getHeroesList(offset: Int, limit: Int) -> Observable<HeroListResponse> {
         self.remoteDataManager.getHeroesList(offset: offset, limit: limit)
     }
 

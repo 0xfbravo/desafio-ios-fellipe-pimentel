@@ -16,12 +16,15 @@ protocol HeroesListViewProtocol: class {
 
 // MARK: - Presenter
 protocol HeroesListPresenterProtocol {
+    var disposeBag: DisposeBag { get }
+    var heroesList: PublishSubject<[HeroInformation]> { get }
+
     func getHeroesList()
 }
 
 // MARK: - Interactor
 protocol HeroesListInteractorProtocol {
-    func getHeroesList(offset: Int, limit: Int) -> Observable<MarvelHeroListResponse>
+    func getHeroesList(offset: Int, limit: Int) -> Observable<[HeroInformation]>
 }
 
 // MARK: - Router
@@ -31,7 +34,7 @@ protocol HeroesListRouterProtocol {
 
 // MARK: - DataManager
 protocol HeroesListRemoteDataManagerProtocol {
-    func getHeroesList(offset: Int, limit: Int) -> Observable<MarvelHeroListResponse>
+    func getHeroesList(offset: Int, limit: Int) -> Observable<HeroListResponse>
 }
 
 protocol HeroesListLocalDataManagerProtocol {
@@ -40,5 +43,5 @@ protocol HeroesListLocalDataManagerProtocol {
 
 // MARK: - Repository
 protocol HeroesListRepositoryProtocol {
-    func getHeroesList(offset: Int, limit: Int) -> Observable<MarvelHeroListResponse>
+    func getHeroesList(offset: Int, limit: Int) -> Observable<HeroListResponse>
 }

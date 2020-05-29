@@ -22,8 +22,11 @@ final class HeroesListInteractor {
 // MARK: - Protocol
 extension HeroesListInteractor: HeroesListInteractorProtocol {
 
-    func getHeroesList(offset: Int, limit: Int) -> Observable<MarvelHeroListResponse> {
+    func getHeroesList(offset: Int, limit: Int) -> Observable<[HeroInformation]> {
         self.repository.getHeroesList(offset: offset, limit: limit)
+                .flatMap { (marvelHeroListResponse) -> Observable<[HeroInformation]> in
+                    .just(marvelHeroListResponse.data.results)
+                }
     }
 
 }

@@ -11,6 +11,7 @@ import Foundation
 protocol MarvelGatewayManagerProtocol {
 
     var gatewayURL: String { get }
+    var privateKey: String { get }
     var publicKey: String { get }
 
 }

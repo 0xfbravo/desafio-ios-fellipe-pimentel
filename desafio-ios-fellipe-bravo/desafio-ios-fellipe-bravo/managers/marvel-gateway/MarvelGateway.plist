@@ -2,9 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>gatewayURL</key>
+	<string>https://gateway.marvel.com</string>
+	<key>privateKey</key>
+	<string>39770eaca8df458e00a8b344b1040d0ec9431251</string>
 	<key>publicKey</key>
 	<string>18ae282d77300aeff868177390759cd1</string>
-	<key>gatewayURL</key>
-	<string>https://gateway.marvel.com/</string>
 </dict>
 </plist>

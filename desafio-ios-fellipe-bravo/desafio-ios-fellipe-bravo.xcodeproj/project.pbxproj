@@ -24,34 +24,40 @@
 		07830C39247B1264002A8FC6 /* HeroesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C38247B1264002A8FC6 /* HeroesListPresenter.swift */; };
 		07830C3B247B1297002A8FC6 /* HeroesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C3A247B1297002A8FC6 /* HeroesListRouter.swift */; };
 		07830C3F247B18ED002A8FC6 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C3E247B18ED002A8FC6 /* BaseRouter.swift */; };
-		07830C55247B1ED4002A8FC6 /* HeroesListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C54247B1ED4002A8FC6 /* HeroesListLocalDataManager.swift */; };
-		07830C57247B1EF3002A8FC6 /* HeroesListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C56247B1EF3002A8FC6 /* HeroesListRemoteDataManager.swift */; };
 		07830C5B247B213F002A8FC6 /* HeroesListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C5A247B213F002A8FC6 /* HeroesListProtocols.swift */; };
 		07830C5D247B22D8002A8FC6 /* HeroesListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C5C247B22D8002A8FC6 /* HeroesListFeature.swift */; };
-		07830C5F247B2488002A8FC6 /* HeroesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C5E247B2488002A8FC6 /* HeroesListRepository.swift */; };
 		07830C77247B32F4002A8FC6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07830C76247B32F4002A8FC6 /* BaseViewController.swift */; };
 		078A41EB247DF00000228AA3 /* MostExpensiveHqRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41EA247DF00000228AA3 /* MostExpensiveHqRouter.swift */; };
 		078A41ED247DF15E00228AA3 /* MostExpensiveHqPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41EC247DF15E00228AA3 /* MostExpensiveHqPresenter.swift */; };
 		078A41F0247DF1BD00228AA3 /* MostExpensiveHqInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41EF247DF1BD00228AA3 /* MostExpensiveHqInteractor.swift */; };
-		078A41F2247DF1E400228AA3 /* MostExpensiveHqRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41F1247DF1E400228AA3 /* MostExpensiveHqRepository.swift */; };
-		078A41F4247DF21B00228AA3 /* MostExpensiveHqRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41F3247DF21B00228AA3 /* MostExpensiveHqRemoteDataManager.swift */; };
-		078A41F6247DF27800228AA3 /* MostExpensiveHqLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41F5247DF27800228AA3 /* MostExpensiveHqLocalDataManager.swift */; };
 		078A41F8247DF2BC00228AA3 /* MostExpensiveHqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41F7247DF2BC00228AA3 /* MostExpensiveHqViewController.swift */; };
 		078A41FA247DF2DE00228AA3 /* MostExpensiveHq.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078A41F9247DF2DE00228AA3 /* MostExpensiveHq.storyboard */; };
 		078A41FC247E055100228AA3 /* HeroViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41FB247E055100228AA3 /* HeroViewCell.swift */; };
-		078A41FE247E11CB00228AA3 /* MarvelHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41FD247E11CB00228AA3 /* MarvelHero.swift */; };
-		078A4200247E127800228AA3 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A41FF247E127800228AA3 /* DataClass.swift */; };
-		078A4202247E129100228AA3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4201247E129100228AA3 /* Result.swift */; };
-		078A4204247E129E00228AA3 /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4203247E129E00228AA3 /* Comics.swift */; };
-		078A4206247E12B100228AA3 /* ComicsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4205247E12B100228AA3 /* ComicsItem.swift */; };
-		078A4208247E12C900228AA3 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4207247E12C900228AA3 /* Stories.swift */; };
-		078A420A247E12D700228AA3 /* StoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4209247E12D700228AA3 /* StoriesItem.swift */; };
-		078A420C247E12E100228AA3 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A420B247E12E100228AA3 /* Thumbnail.swift */; };
-		078A420E247E12F000228AA3 /* URLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A420D247E12F000228AA3 /* URLElement.swift */; };
 		078A4210247E162E00228AA3 /* MarvelGatewayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A420F247E162E00228AA3 /* MarvelGatewayManager.swift */; };
 		078A4212247E166900228AA3 /* MarvelGatewayManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4211247E166900228AA3 /* MarvelGatewayManagerProtocol.swift */; };
 		078A4214247E18B600228AA3 /* MarvelGateway.plist in Resources */ = {isa = PBXBuildFile; fileRef = 078A4213247E18B600228AA3 /* MarvelGateway.plist */; };
+		079C361E247EB11F009E2459 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C361D247EB11F009E2459 /* RequestManager.swift */; };
+		079C3620247EB15A009E2459 /* RequestManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C361F247EB15A009E2459 /* RequestManagerProtocol.swift */; };
+		07CCEB3D2480BEE80083AFA3 /* HeroViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CCEB3C2480BEE80083AFA3 /* HeroViewCell.xib */; };
 		6C76828A9CCCB5D329309D01 /* Pods_desafio_ios_fellipe_bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CF837D589D9E568978BD99 /* Pods_desafio_ios_fellipe_bravo.framework */; };
+		B300C20A239C0F2F894E183F /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CDDE18FE3D94DDA50C56 /* Comics.swift */; };
+		B300C36AF3321ABC3475EE25 /* HeroInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CA68CE4A4B7FC05C391A /* HeroInformation.swift */; };
+		B300C373CC8D3EA8DFE2A96D /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CEEC4543ABFE3A68BCD5 /* Stories.swift */; };
+		B300C3F758264F25F2D065C7 /* HeroesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C95F00E663AEFDD5C8C6 /* HeroesListRepository.swift */; };
+		B300C59E58B1A273320B8AB7 /* HeroesListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C1FCAC5E48E179957CEA /* HeroesListLocalDataManager.swift */; };
+		B300C7C1A738BA487D247490 /* HeroesListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C3DB8028D99547AFB8AD /* HeroesListRemoteDataManager.swift */; };
+		B300C8E991699D54811FB337 /* URLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CC8BB45B942452FD21F4 /* URLElement.swift */; };
+		B300C933C019062E9DB7C1BB /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C368DB6618CAC2AE2787 /* DataClass.swift */; };
+		B300C96457321729DACC3E18 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CBED0AE0000229B4670F /* Thumbnail.swift */; };
+		B300CACA2C4E25F43A614638 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C17542D375EC03D7C42B /* ErrorManager.swift */; };
+		B300CAF6F526F4B2A64A0359 /* MostExpensiveHqRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C3236D4046598E4F015A /* MostExpensiveHqRepository.swift */; };
+		B300CBAF758CD28618B45BE5 /* HeroesListEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CCA995B07FA2E8E5A861 /* HeroesListEndpoints.swift */; };
+		B300CC41E71FABC38985946C /* StoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C05CF626F9AE3E799C11 /* StoriesItem.swift */; };
+		B300CC908AE717597FEAE363 /* ComicsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C63598C2952C0FCC57C1 /* ComicsItem.swift */; };
+		B300CD4B041D8B7CAC11A569 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C92859ED35611D375592 /* String+MD5.swift */; };
+		B300CE497A539BF539551CA5 /* MostExpensiveHqRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CDC0BD89D80468E89614 /* MostExpensiveHqRemoteDataManager.swift */; };
+		B300CE4CBFC2344D099B7049 /* HeroListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C31D5D1602728741047A /* HeroListResponse.swift */; };
+		B300CF04162B9CFACC945741 /* MostExpensiveHqLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C2A204D9DC31FDAEE942 /* MostExpensiveHqLocalDataManager.swift */; };
 		E33523CAC72878BAE61933E5 /* Pods_desafio_ios_fellipe_bravoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD4333931350BBEF514A5A8 /* Pods_desafio_ios_fellipe_bravoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,39 +102,45 @@
 		07830C38247B1264002A8FC6 /* HeroesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListPresenter.swift; sourceTree = "<group>"; };
 		07830C3A247B1297002A8FC6 /* HeroesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListRouter.swift; sourceTree = "<group>"; };
 		07830C3E247B18ED002A8FC6 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
-		07830C54247B1ED4002A8FC6 /* HeroesListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListLocalDataManager.swift; sourceTree = "<group>"; };
-		07830C56247B1EF3002A8FC6 /* HeroesListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListRemoteDataManager.swift; sourceTree = "<group>"; };
 		07830C5A247B213F002A8FC6 /* HeroesListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListProtocols.swift; sourceTree = "<group>"; };
 		07830C5C247B22D8002A8FC6 /* HeroesListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListFeature.swift; sourceTree = "<group>"; };
-		07830C5E247B2488002A8FC6 /* HeroesListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListRepository.swift; sourceTree = "<group>"; };
 		07830C76247B32F4002A8FC6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		078A41EA247DF00000228AA3 /* MostExpensiveHqRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqRouter.swift; sourceTree = "<group>"; };
 		078A41EC247DF15E00228AA3 /* MostExpensiveHqPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqPresenter.swift; sourceTree = "<group>"; };
 		078A41EF247DF1BD00228AA3 /* MostExpensiveHqInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqInteractor.swift; sourceTree = "<group>"; };
-		078A41F1247DF1E400228AA3 /* MostExpensiveHqRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqRepository.swift; sourceTree = "<group>"; };
-		078A41F3247DF21B00228AA3 /* MostExpensiveHqRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqRemoteDataManager.swift; sourceTree = "<group>"; };
-		078A41F5247DF27800228AA3 /* MostExpensiveHqLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqLocalDataManager.swift; sourceTree = "<group>"; };
 		078A41F7247DF2BC00228AA3 /* MostExpensiveHqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqViewController.swift; sourceTree = "<group>"; };
 		078A41F9247DF2DE00228AA3 /* MostExpensiveHq.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MostExpensiveHq.storyboard; sourceTree = "<group>"; };
 		078A41FB247E055100228AA3 /* HeroViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewCell.swift; sourceTree = "<group>"; };
-		078A41FD247E11CB00228AA3 /* MarvelHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelHero.swift; sourceTree = "<group>"; };
-		078A41FF247E127800228AA3 /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
-		078A4201247E129100228AA3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		078A4203247E129E00228AA3 /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
-		078A4205247E12B100228AA3 /* ComicsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsItem.swift; sourceTree = "<group>"; };
-		078A4207247E12C900228AA3 /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
-		078A4209247E12D700228AA3 /* StoriesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesItem.swift; sourceTree = "<group>"; };
-		078A420B247E12E100228AA3 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
-		078A420D247E12F000228AA3 /* URLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLElement.swift; sourceTree = "<group>"; };
 		078A420F247E162E00228AA3 /* MarvelGatewayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelGatewayManager.swift; sourceTree = "<group>"; };
 		078A4211247E166900228AA3 /* MarvelGatewayManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelGatewayManagerProtocol.swift; sourceTree = "<group>"; };
 		078A4213247E18B600228AA3 /* MarvelGateway.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MarvelGateway.plist; sourceTree = "<group>"; };
+		079C361D247EB11F009E2459 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		079C361F247EB15A009E2459 /* RequestManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerProtocol.swift; sourceTree = "<group>"; };
+		07CCEB3C2480BEE80083AFA3 /* HeroViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroViewCell.xib; sourceTree = "<group>"; };
 		0AD4333931350BBEF514A5A8 /* Pods_desafio_ios_fellipe_bravoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_fellipe_bravoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2724B1551BF64A7D389F9C2B /* Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E24645D2F52957A55018955 /* Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75EFDBA4322AE3842262E974 /* Pods-desafio-ios-fellipe-bravoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravoTests.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravoTests/Pods-desafio-ios-fellipe-bravoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F28798F1B6989D51089EE3E /* Pods-desafio-ios-fellipe-bravo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo/Pods-desafio-ios-fellipe-bravo.release.xcconfig"; sourceTree = "<group>"; };
 		AD28D850F15BA9F5024ED26D /* Pods-desafio-ios-fellipe-bravoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravoTests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravoTests/Pods-desafio-ios-fellipe-bravoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B300C05CF626F9AE3E799C11 /* StoriesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesItem.swift; sourceTree = "<group>"; };
+		B300C17542D375EC03D7C42B /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		B300C1FCAC5E48E179957CEA /* HeroesListLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesListLocalDataManager.swift; sourceTree = "<group>"; };
+		B300C2A204D9DC31FDAEE942 /* MostExpensiveHqLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqLocalDataManager.swift; sourceTree = "<group>"; };
+		B300C31D5D1602728741047A /* HeroListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroListResponse.swift; sourceTree = "<group>"; };
+		B300C3236D4046598E4F015A /* MostExpensiveHqRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqRepository.swift; sourceTree = "<group>"; };
+		B300C368DB6618CAC2AE2787 /* DataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
+		B300C3DB8028D99547AFB8AD /* HeroesListRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesListRemoteDataManager.swift; sourceTree = "<group>"; };
+		B300C63598C2952C0FCC57C1 /* ComicsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsItem.swift; sourceTree = "<group>"; };
+		B300C92859ED35611D375592 /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		B300C95F00E663AEFDD5C8C6 /* HeroesListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesListRepository.swift; sourceTree = "<group>"; };
+		B300CA68CE4A4B7FC05C391A /* HeroInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroInformation.swift; sourceTree = "<group>"; };
+		B300CBED0AE0000229B4670F /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		B300CC8BB45B942452FD21F4 /* URLElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLElement.swift; sourceTree = "<group>"; };
+		B300CCA995B07FA2E8E5A861 /* HeroesListEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesListEndpoints.swift; sourceTree = "<group>"; };
+		B300CDC0BD89D80468E89614 /* MostExpensiveHqRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqRemoteDataManager.swift; sourceTree = "<group>"; };
+		B300CDDE18FE3D94DDA50C56 /* Comics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
+		B300CEEC4543ABFE3A68BCD5 /* Stories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 		B5CF837D589D9E568978BD99 /* Pods_desafio_ios_fellipe_bravo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_fellipe_bravo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32CDC77F9314B3151CFEE53 /* Pods-desafio-ios-fellipe-bravo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo/Pods-desafio-ios-fellipe-bravo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +195,7 @@
 				0751DD36247DED04006A1018 /* router */,
 				0751DD37247DED75006A1018 /* MostExpensiveHqProtocols.swift */,
 				0751DD39247DEDB7006A1018 /* MostExpensiveHqFeature.swift */,
+				B300CD9DAE3C4D13609BF50B /* repository */,
 			);
 			path = "most-expensive-hq";
 			sourceTree = "<group>";
@@ -234,7 +247,6 @@
 		0751DD33247DECE2006A1018 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				078A41EE247DF19B00228AA3 /* repository */,
 				078A41EF247DF1BD00228AA3 /* MostExpensiveHqInteractor.swift */,
 			);
 			path = interactor;
@@ -292,6 +304,7 @@
 				07830C0D247B080F002A8FC6 /* core */,
 				07830C0E247B0852002A8FC6 /* features */,
 				07830C60247B2504002A8FC6 /* managers */,
+				B300C1BBE889743B565D2C93 /* extensions */,
 			);
 			path = "desafio-ios-fellipe-bravo";
 			sourceTree = "<group>";
@@ -356,6 +369,7 @@
 				07830C12247B098B002A8FC6 /* router */,
 				07830C5A247B213F002A8FC6 /* HeroesListProtocols.swift */,
 				07830C5C247B22D8002A8FC6 /* HeroesListFeature.swift */,
+				B300C4FE1840C13F2C3AB07C /* repository */,
 			);
 			path = "heroes-list";
 			sourceTree = "<group>";
@@ -374,6 +388,7 @@
 				07830BDB247AE7C0002A8FC6 /* HeroesListViewController.swift */,
 				07830BDD247AE7C0002A8FC6 /* HeroesList.storyboard */,
 				078A41FB247E055100228AA3 /* HeroViewCell.swift */,
+				07CCEB3C2480BEE80083AFA3 /* HeroViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -397,7 +412,6 @@
 		07830C28247B0FA4002A8FC6 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				07830C53247B1C3D002A8FC6 /* repository */,
 				07830C2D247B1121002A8FC6 /* HeroesListInteractor.swift */,
 			);
 			path = interactor;
@@ -406,15 +420,15 @@
 		07830C29247B0FBF002A8FC6 /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				078A41FD247E11CB00228AA3 /* MarvelHero.swift */,
-				078A41FF247E127800228AA3 /* DataClass.swift */,
-				078A4201247E129100228AA3 /* Result.swift */,
-				078A4203247E129E00228AA3 /* Comics.swift */,
-				078A4205247E12B100228AA3 /* ComicsItem.swift */,
-				078A4207247E12C900228AA3 /* Stories.swift */,
-				078A4209247E12D700228AA3 /* StoriesItem.swift */,
-				078A420B247E12E100228AA3 /* Thumbnail.swift */,
-				078A420D247E12F000228AA3 /* URLElement.swift */,
+				B300C31D5D1602728741047A /* HeroListResponse.swift */,
+				B300CC8BB45B942452FD21F4 /* URLElement.swift */,
+				B300CBED0AE0000229B4670F /* Thumbnail.swift */,
+				B300C05CF626F9AE3E799C11 /* StoriesItem.swift */,
+				B300CEEC4543ABFE3A68BCD5 /* Stories.swift */,
+				B300C63598C2952C0FCC57C1 /* ComicsItem.swift */,
+				B300CDDE18FE3D94DDA50C56 /* Comics.swift */,
+				B300CA68CE4A4B7FC05C391A /* HeroInformation.swift */,
+				B300C368DB6618CAC2AE2787 /* DataClass.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -428,42 +442,33 @@
 			path = viper;
 			sourceTree = "<group>";
 		};
-		07830C53247B1C3D002A8FC6 /* repository */ = {
-			isa = PBXGroup;
-			children = (
-				07830C5E247B2488002A8FC6 /* HeroesListRepository.swift */,
-				07830C54247B1ED4002A8FC6 /* HeroesListLocalDataManager.swift */,
-				07830C56247B1EF3002A8FC6 /* HeroesListRemoteDataManager.swift */,
-			);
-			path = repository;
-			sourceTree = "<group>";
-		};
 		07830C60247B2504002A8FC6 /* managers */ = {
 			isa = PBXGroup;
 			children = (
-				078A4218247E20D000228AA3 /* marvel */,
+				079C361C247EB111009E2459 /* request */,
+				078A4218247E20D000228AA3 /* marvel-gateway */,
+				B300C1C4921E0C9634D90789 /* error */,
 			);
 			path = managers;
 			sourceTree = "<group>";
 		};
-		078A41EE247DF19B00228AA3 /* repository */ = {
-			isa = PBXGroup;
-			children = (
-				078A41F1247DF1E400228AA3 /* MostExpensiveHqRepository.swift */,
-				078A41F3247DF21B00228AA3 /* MostExpensiveHqRemoteDataManager.swift */,
-				078A41F5247DF27800228AA3 /* MostExpensiveHqLocalDataManager.swift */,
-			);
-			path = repository;
-			sourceTree = "<group>";
-		};
-		078A4218247E20D000228AA3 /* marvel */ = {
+		078A4218247E20D000228AA3 /* marvel-gateway */ = {
 			isa = PBXGroup;
 			children = (
 				078A4213247E18B600228AA3 /* MarvelGateway.plist */,
 				078A420F247E162E00228AA3 /* MarvelGatewayManager.swift */,
 				078A4211247E166900228AA3 /* MarvelGatewayManagerProtocol.swift */,
 			);
-			path = marvel;
+			path = "marvel-gateway";
+			sourceTree = "<group>";
+		};
+		079C361C247EB111009E2459 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				079C361D247EB11F009E2459 /* RequestManager.swift */,
+				079C361F247EB15A009E2459 /* RequestManagerProtocol.swift */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		955D73AD340357B5D54C38AB /* Frameworks */ = {
@@ -474,6 +479,59 @@
 				0AD4333931350BBEF514A5A8 /* Pods_desafio_ios_fellipe_bravoTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B300C1BBE889743B565D2C93 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B300C92859ED35611D375592 /* String+MD5.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		B300C1C4921E0C9634D90789 /* error */ = {
+			isa = PBXGroup;
+			children = (
+				B300C17542D375EC03D7C42B /* ErrorManager.swift */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		B300C308F831861C5760F6B8 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				B300C1FCAC5E48E179957CEA /* HeroesListLocalDataManager.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		B300C4FE1840C13F2C3AB07C /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				B300C95F00E663AEFDD5C8C6 /* HeroesListRepository.swift */,
+				B300C308F831861C5760F6B8 /* local */,
+				B300CDD235E4AD576B4E64C5 /* remote */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		B300CD9DAE3C4D13609BF50B /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				B300C3236D4046598E4F015A /* MostExpensiveHqRepository.swift */,
+				B300CDC0BD89D80468E89614 /* MostExpensiveHqRemoteDataManager.swift */,
+				B300C2A204D9DC31FDAEE942 /* MostExpensiveHqLocalDataManager.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		B300CDD235E4AD576B4E64C5 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				B300C3DB8028D99547AFB8AD /* HeroesListRemoteDataManager.swift */,
+				B300CCA995B07FA2E8E5A861 /* HeroesListEndpoints.swift */,
+			);
+			path = remote;
 			sourceTree = "<group>";
 		};
 		CFEF416463A94B771A054C08 /* Pods */ = {
@@ -603,6 +661,7 @@
 				078A41FA247DF2DE00228AA3 /* MostExpensiveHq.storyboard in Resources */,
 				07830BE7247AE7C5002A8FC6 /* LaunchScreen.storyboard in Resources */,
 				07830BE4247AE7C5002A8FC6 /* Assets.xcassets in Resources */,
+				07CCEB3D2480BEE80083AFA3 /* HeroViewCell.xib in Resources */,
 				07830BDF247AE7C0002A8FC6 /* HeroesList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -748,42 +807,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079C361E247EB11F009E2459 /* RequestManager.swift in Sources */,
 				0751DD3A247DEDB7006A1018 /* MostExpensiveHqFeature.swift in Sources */,
-				078A4204247E129E00228AA3 /* Comics.swift in Sources */,
-				078A41F4247DF21B00228AA3 /* MostExpensiveHqRemoteDataManager.swift in Sources */,
 				07830C3B247B1297002A8FC6 /* HeroesListRouter.swift in Sources */,
-				078A420A247E12D700228AA3 /* StoriesItem.swift in Sources */,
 				078A41EB247DF00000228AA3 /* MostExpensiveHqRouter.swift in Sources */,
 				0751DD38247DED75006A1018 /* MostExpensiveHqProtocols.swift in Sources */,
 				078A41F0247DF1BD00228AA3 /* MostExpensiveHqInteractor.swift in Sources */,
-				078A41F2247DF1E400228AA3 /* MostExpensiveHqRepository.swift in Sources */,
 				07830C5D247B22D8002A8FC6 /* HeroesListFeature.swift in Sources */,
 				07830BE2247AE7C0002A8FC6 /* desafio_ios_fellipe_bravo.xcdatamodeld in Sources */,
 				07830C39247B1264002A8FC6 /* HeroesListPresenter.swift in Sources */,
 				07830C77247B32F4002A8FC6 /* BaseViewController.swift in Sources */,
-				078A41FE247E11CB00228AA3 /* MarvelHero.swift in Sources */,
 				07830C0C247AFDB4002A8FC6 /* Colors.swift in Sources */,
 				07830C2E247B1121002A8FC6 /* HeroesListInteractor.swift in Sources */,
-				07830C55247B1ED4002A8FC6 /* HeroesListLocalDataManager.swift in Sources */,
-				078A4200247E127800228AA3 /* DataClass.swift in Sources */,
 				07830C3F247B18ED002A8FC6 /* BaseRouter.swift in Sources */,
-				078A4206247E12B100228AA3 /* ComicsItem.swift in Sources */,
 				07830BDC247AE7C0002A8FC6 /* HeroesListViewController.swift in Sources */,
-				078A4202247E129100228AA3 /* Result.swift in Sources */,
 				078A41F8247DF2BC00228AA3 /* MostExpensiveHqViewController.swift in Sources */,
 				078A41ED247DF15E00228AA3 /* MostExpensiveHqPresenter.swift in Sources */,
-				078A41F6247DF27800228AA3 /* MostExpensiveHqLocalDataManager.swift in Sources */,
 				078A4210247E162E00228AA3 /* MarvelGatewayManager.swift in Sources */,
 				078A41FC247E055100228AA3 /* HeroViewCell.swift in Sources */,
-				078A420E247E12F000228AA3 /* URLElement.swift in Sources */,
-				07830C5F247B2488002A8FC6 /* HeroesListRepository.swift in Sources */,
 				078A4212247E166900228AA3 /* MarvelGatewayManagerProtocol.swift in Sources */,
 				07830C5B247B213F002A8FC6 /* HeroesListProtocols.swift in Sources */,
-				07830C57247B1EF3002A8FC6 /* HeroesListRemoteDataManager.swift in Sources */,
 				07830BD8247AE7C0002A8FC6 /* AppDelegate.swift in Sources */,
-				078A4208247E12C900228AA3 /* Stories.swift in Sources */,
 				07830BDA247AE7C0002A8FC6 /* SceneDelegate.swift in Sources */,
-				078A420C247E12E100228AA3 /* Thumbnail.swift in Sources */,
+				079C3620247EB15A009E2459 /* RequestManagerProtocol.swift in Sources */,
+				B300CACA2C4E25F43A614638 /* ErrorManager.swift in Sources */,
+				B300C3F758264F25F2D065C7 /* HeroesListRepository.swift in Sources */,
+				B300CAF6F526F4B2A64A0359 /* MostExpensiveHqRepository.swift in Sources */,
+				B300CE497A539BF539551CA5 /* MostExpensiveHqRemoteDataManager.swift in Sources */,
+				B300CF04162B9CFACC945741 /* MostExpensiveHqLocalDataManager.swift in Sources */,
+				B300C59E58B1A273320B8AB7 /* HeroesListLocalDataManager.swift in Sources */,
+				B300C7C1A738BA487D247490 /* HeroesListRemoteDataManager.swift in Sources */,
+				B300CBAF758CD28618B45BE5 /* HeroesListEndpoints.swift in Sources */,
+				B300CD4B041D8B7CAC11A569 /* String+MD5.swift in Sources */,
+				B300CE4CBFC2344D099B7049 /* HeroListResponse.swift in Sources */,
+				B300C8E991699D54811FB337 /* URLElement.swift in Sources */,
+				B300C96457321729DACC3E18 /* Thumbnail.swift in Sources */,
+				B300CC41E71FABC38985946C /* StoriesItem.swift in Sources */,
+				B300C373CC8D3EA8DFE2A96D /* Stories.swift in Sources */,
+				B300CC908AE717597FEAE363 /* ComicsItem.swift in Sources */,
+				B300C20A239C0F2F894E183F /* Comics.swift in Sources */,
+				B300C36AF3321ABC3475EE25 /* HeroInformation.swift in Sources */,
+				B300C933C019062E9DB7C1BB /* DataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

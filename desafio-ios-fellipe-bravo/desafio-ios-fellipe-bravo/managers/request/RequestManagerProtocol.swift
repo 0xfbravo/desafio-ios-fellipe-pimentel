@@ -11,5 +11,5 @@ import Alamofire
 import RxSwift
 
 protocol RequestManagerProtocol {
-    func doRequest(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, parameters: [String: Any]?, encoding: ParameterEncoding, headers: [String: String]?) -> Observable<(HTTPURLResponse, Any)>
+    func doRequest(_ method: Alamofire.HTTPMethod, path: String, parameters: [String: Any]?, encoding: ParameterEncoding, headers: HTTPHeaders?) -> Observable<Data>
 }

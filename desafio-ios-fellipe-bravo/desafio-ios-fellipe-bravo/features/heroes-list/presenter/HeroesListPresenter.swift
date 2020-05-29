@@ -7,12 +7,19 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 final class HeroesListPresenter {
     
     weak var view: HeroesListViewProtocol!
     var router: HeroesListRouterProtocol!
     var interactor: HeroesListInteractorProtocol!
+
+    var disposeBag = DisposeBag()
+    var heroesList = PublishSubject<[HeroInformation]>()
+    var offset = 0
+    var pagination = 20
     
     init(view: HeroesListViewProtocol, router: HeroesListRouterProtocol, interactor: HeroesListInteractorProtocol) {
         self.view = view
@@ -26,13 +33,19 @@ final class HeroesListPresenter {
 extension HeroesListPresenter: HeroesListPresenterProtocol {
 
     func getHeroesList() {
+        let currentOffset = self.offset
+        let nextOffset = self.offset + self.pagination
+
         interactor
-                .getHeroesList(offset: 0, limit: 10)
-                .subscribe(onNext: { [weak self] response in
-                    print(response)
-                }, onError: { [weak self] error in
+                .getHeroesList(offset: currentOffset, limit: nextOffset)
+                .subscribe(onNext: { marvelHeroList in
+                    self.offset = nextOffset
+                    self.heroesList.onNext(marvelHeroList)
+                    print(marvelHeroList)
+                }, onError: { error in
                     print(error)
                 })
+                .disposed(by: disposeBag)
     }
 
 }

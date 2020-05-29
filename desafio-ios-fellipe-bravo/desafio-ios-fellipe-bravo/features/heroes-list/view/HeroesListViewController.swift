@@ -7,25 +7,39 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HeroesListViewController: UIViewController {
     
     var presenter: HeroesListPresenterProtocol!
     
     // MARK: - Outlets
-    @IBOutlet weak var heroesListTableView: UITableView!
+    @IBOutlet private weak var heroesListTableView: UITableView!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = HeroesListFeature.assemblePresenter(view: self)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         assembleUI()
     }
-    
+
     // MARK: - UI
     private func assembleUI() {
-        heroesListTableView.delegate = self
-        heroesListTableView.dataSource = self
+        heroesListTableView.rx.setDelegate(self).disposed(by: presenter.disposeBag)
+
+        let heroViewCellXib = UINib(nibName: HeroViewCell.xibName, bundle: nil)
+        heroesListTableView.register(heroViewCellXib, forCellReuseIdentifier: HeroViewCell.cellIdentifier)
+
+        presenter.heroesList.bind(to: heroesListTableView.rx.items(cellIdentifier: HeroViewCell.cellIdentifier, cellType: HeroViewCell.self)) {
+            (row: Int, item: HeroInformation, cell: HeroViewCell) in
+            cell.assemble(heroInformation: item)
+        }.disposed(by: presenter.disposeBag)
+
         presenter.getHeroesList()
     }
     
@@ -39,24 +53,5 @@ extension HeroesListViewController: HeroesListViewProtocol {
 }
 
 extension HeroesListViewController: UITableViewDelegate {
-    
-}
 
-extension HeroesListViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20 // TODO: Remove this mock
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = heroesListTableView.dequeueReusableCell(withIdentifier: "heroViewCell", for: indexPath) as? HeroViewCell
-            else { return UITableViewCell() }
-
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         // TODO: Implement didSelect
-    }
-    
 }

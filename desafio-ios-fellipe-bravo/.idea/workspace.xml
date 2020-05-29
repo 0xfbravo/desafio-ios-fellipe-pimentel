@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2f1db1e-5255-41c5-bbaa-8d96495dd917" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_8C6154E4-7ABF-43BC-A492-0C8902662203" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1cT6CTdUx5tzlmgqGJipd7vpebD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="desafio-ios-fellipe-bravo" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/most-expensive-hq/repository/remote" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/most-expensive-hq/repository/remote" />
+      <recent name="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/most-expensive-hq/entity" />
+      <recent name="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/entity" />
+      <recent name="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/character-detail/repository/local" />
+      <recent name="$PROJECT_DIR$/desafio-ios-fellipe-bravo/features/characters-list/repository/local" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="desafio-ios-fellipe-bravo" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="desafio-ios-fellipe-bravo" TARGET_NAME="desafio-ios-fellipe-bravo" CONFIG_NAME="Debug" SCHEME_NAME="desafio-ios-fellipe-bravo" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="desafio-ios-fellipe-bravo" RUN_TARGET_NAME="desafio-ios-fellipe-bravo" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2f1db1e-5255-41c5-bbaa-8d96495dd917" name="Default Changelist" comment="" />
+      <created>1590540108862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590540108862</updated>
+      <workItem from="1590540122429" duration="732000" />
+      <workItem from="1590591483286" duration="9489000" />
+      <workItem from="1590713153565" duration="13665000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="605" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1590777057871">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="605" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1590777057871" />
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590735604286">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1590735604286" />
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1590782642562">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590782642562" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1590782642561">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590782642561" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1590782642561">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590782642561" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1590782642562">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590782642562" />
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom" timestamp="1590781932059">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590781932059" />
+    <state width="1638" height="346" key="GridCell.Tab.1.center" timestamp="1590781932059">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590781932059" />
+    <state width="1638" height="346" key="GridCell.Tab.1.left" timestamp="1590781932058">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590781932058" />
+    <state width="1638" height="346" key="GridCell.Tab.1.right" timestamp="1590781932059">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590781932059" />
+    <state x="541" y="169" width="1101" height="735" key="find.popup" timestamp="1590780680230">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="541" y="169" width="1101" height="735" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1590780680230" />
+    <state x="505" y="187" width="670" height="676" key="search.everywhere.popup" timestamp="1590779539747">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="187" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1590779539747" />
+    <state x="570" y="455" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1590713739069">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="570" y="455" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1590713739069" />
+  </component>
+</project>

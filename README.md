@@ -9,7 +9,7 @@ Todos os módulos seguem os padrões da [VIPER Architecture](https://medium.com/
 
 
 #### Preview
-|  	|  	|  	|
+| Characters List 	| Character's Detail 	| Most expensive HQ 	|
 |-	|-	|-	|
 |<img src="/assets/characters-list.png" width="250" height="500"> | <img src="/assets/character-detail.png" width="250" height="500"> | <img src="/assets/most-expensive-hq.png" width="250" height="500">
 

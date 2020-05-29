@@ -15,7 +15,6 @@ class MostExpensiveHqViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = MostExpensiveHqFeature.assemblePresenter(view: self)
     }
 
 }

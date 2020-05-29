@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 // MARK: - View
 protocol MostExpensiveHqViewProtocol: class {
@@ -15,12 +17,14 @@ protocol MostExpensiveHqViewProtocol: class {
 
 // MARK: - Presenter
 protocol MostExpensiveHqPresenterProtocol {
+    var characterDetail: CharacterInformation! { get set }
     
+    func getMostExpensiveComic()
 }
 
 // MARK: - Interactor
 protocol MostExpensiveHqInteractorProtocol {
-    
+    func getCharacterComicsList(characterId: Int) -> Observable<[ComicsInformation]>
 }
 
 // MARK: - Router
@@ -30,7 +34,7 @@ protocol MostExpensiveHqRouterProtocol {
 
 // MARK: - DataManager
 protocol MostExpensiveHqRemoteDataManagerProtocol {
-    
+    func getCharacterComicsList(characterId: Int) -> Observable<ComicsListResponse>
 }
 
 protocol MostExpensiveHqLocalDataManagerProtocol {
@@ -39,5 +43,5 @@ protocol MostExpensiveHqLocalDataManagerProtocol {
 
 // MARK: - Repository
 protocol MostExpensiveHqRepositoryProtocol {
-    
+    func getCharacterComicsList(characterId: Int) -> Observable<ComicsListResponse>
 }

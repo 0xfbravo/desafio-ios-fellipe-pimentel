@@ -15,13 +15,88 @@
                     <view key="view" contentMode="scaleToFill" id="dHh-Hh-EAd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QhN-TR-nln" userLabel="comicImage">
+                                <rect key="frame" x="87" y="76" width="240" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="MGi-6m-gPI"/>
+                                    <constraint firstAttribute="width" constant="240" id="R83-SN-rE0"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4U-tu-Wag" customClass="GradientView" customModule="desafio_ios_fellipe_bravo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="428" width="414" height="89.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comic  #1" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TL-ht-thq" userLabel="comicTitle">
+                                        <rect key="frame" x="16" y="53" width="366" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weH-JW-1bw">
+                                        <rect key="frame" x="389" y="0.0" width="25" height="89.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="ZQy-g9-Qmv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0TL-ht-thq" secondAttribute="bottom" constant="16" id="2Sj-yD-j26"/>
+                                    <constraint firstItem="0TL-ht-thq" firstAttribute="leading" secondItem="Q4U-tu-Wag" secondAttribute="leading" constant="16" id="BQK-nV-lCr"/>
+                                    <constraint firstItem="0TL-ht-thq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q4U-tu-Wag" secondAttribute="top" constant="16" id="I7X-iV-Jq1"/>
+                                    <constraint firstAttribute="trailing" secondItem="0TL-ht-thq" secondAttribute="trailing" constant="32" id="YGg-2g-7mn"/>
+                                    <constraint firstAttribute="trailing" secondItem="weH-JW-1bw" secondAttribute="trailing" id="iEl-ju-CXt"/>
+                                    <constraint firstAttribute="bottom" secondItem="weH-JW-1bw" secondAttribute="bottom" id="kVS-Kj-Wue"/>
+                                    <constraint firstItem="weH-JW-1bw" firstAttribute="top" secondItem="Q4U-tu-Wag" secondAttribute="top" id="wEU-Wy-0MO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf7-uA-faz" userLabel="comicDescription">
+                                <rect key="frame" x="16" y="533.5" width="382" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 34.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94F-cT-1c7" userLabel="comicPrice">
+                                <rect key="frame" x="269" y="404" width="58" height="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QhN-TR-nln" firstAttribute="top" secondItem="Pz8-75-bKq" secondAttribute="top" constant="32" id="57z-Fh-OeC"/>
+                            <constraint firstItem="jf7-uA-faz" firstAttribute="top" secondItem="Q4U-tu-Wag" secondAttribute="bottom" constant="16" id="A52-PM-4lV"/>
+                            <constraint firstItem="QhN-TR-nln" firstAttribute="centerX" secondItem="Pz8-75-bKq" secondAttribute="centerX" id="CLX-L2-wwd"/>
+                            <constraint firstItem="Q4U-tu-Wag" firstAttribute="height" secondItem="dHh-Hh-EAd" secondAttribute="height" multiplier="0.1" id="FJr-fA-EsS"/>
+                            <constraint firstItem="Q4U-tu-Wag" firstAttribute="top" secondItem="QhN-TR-nln" secondAttribute="bottom" constant="32" id="IvW-nc-vJx"/>
+                            <constraint firstItem="Q4U-tu-Wag" firstAttribute="trailing" secondItem="Pz8-75-bKq" secondAttribute="trailing" id="LNL-X0-acf"/>
+                            <constraint firstItem="94F-cT-1c7" firstAttribute="trailing" secondItem="QhN-TR-nln" secondAttribute="trailing" id="Sat-OB-JUB"/>
+                            <constraint firstItem="Q4U-tu-Wag" firstAttribute="leading" secondItem="Pz8-75-bKq" secondAttribute="leading" id="U6g-lw-Qs5"/>
+                            <constraint firstItem="jf7-uA-faz" firstAttribute="leading" secondItem="Pz8-75-bKq" secondAttribute="leading" constant="16" id="UTu-ut-6BX"/>
+                            <constraint firstItem="Pz8-75-bKq" firstAttribute="trailing" secondItem="jf7-uA-faz" secondAttribute="trailing" constant="16" id="uq5-OV-zU8"/>
+                            <constraint firstItem="94F-cT-1c7" firstAttribute="top" secondItem="QhN-TR-nln" secondAttribute="bottom" constant="8" id="xMB-kY-4pV"/>
+                            <constraint firstItem="Pz8-75-bKq" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jf7-uA-faz" secondAttribute="bottom" id="zAs-4z-x4W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pz8-75-bKq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsG-im-ScF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37" y="-46"/>
+            <point key="canvasLocation" x="-37.681159420289859" y="-46.205357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="2304" height="1408"/>
+    </resources>
 </document>

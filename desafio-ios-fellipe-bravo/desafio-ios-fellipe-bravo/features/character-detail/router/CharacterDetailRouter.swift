@@ -14,5 +14,11 @@ final class CharacterDetailRouter: BaseRouter {
 
 // MARK: - Protocol
 extension CharacterDetailRouter: CharacterDetailRouterProtocol {
-    
+
+    func openMostExpensiveHq(of character: CharacterInformation) {
+        let feature = MostExpensiveHqFeature.assemble()
+        feature.presenter.characterDetail = character
+        currentViewController.present(feature, animated: true)
+    }
+
 }

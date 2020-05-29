@@ -27,7 +27,7 @@ protocol CharacterDetailInteractorProtocol {
 
 // MARK: - Router
 protocol CharacterDetailRouterProtocol {
-    
+    func openMostExpensiveHq(of character: CharacterInformation)
 }
 
 // MARK: - DataManager

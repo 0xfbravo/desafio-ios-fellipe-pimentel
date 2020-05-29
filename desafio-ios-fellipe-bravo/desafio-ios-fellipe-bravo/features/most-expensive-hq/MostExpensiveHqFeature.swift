@@ -27,6 +27,7 @@ final class MostExpensiveHqFeature {
     static func assemble() -> MostExpensiveHqViewController {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier) as! MostExpensiveHqViewController
+        view.presenter = assemblePresenter(view: view)
         return view
     }
     

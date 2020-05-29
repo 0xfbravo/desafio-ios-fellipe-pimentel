@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 final class MostExpensiveHqRepository {
 
@@ -22,5 +23,7 @@ final class MostExpensiveHqRepository {
 
 // MARK: - Protocol
 extension MostExpensiveHqRepository: MostExpensiveHqRepositoryProtocol {
-    
+    func getCharacterComicsList(characterId: Int) -> Observable<ComicsListResponse> {
+        self.remoteDataManager.getCharacterComicsList(characterId: characterId)
+    }
 }

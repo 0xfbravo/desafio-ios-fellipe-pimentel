@@ -5,9 +5,9 @@
 
 import Foundation
 
-struct DataClass: Codable {
+struct ComicsDataClass: Codable {
 
     let offset, limit, total, count: Int
-    let results: [CharacterInformation]
+    let results: [ComicsInformation]
 
 }

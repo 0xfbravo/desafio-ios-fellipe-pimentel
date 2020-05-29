@@ -5,16 +5,18 @@
 
 import Foundation
 
-struct CharacterInformation: Codable {
+struct ComicsInformation: Codable {
 
     let id: Int
-    let name, resultDescription: String
-    let thumbnail: CharacterThumbnail
+    let title: String
+    let resultDescription: String?
+    let prices: [ComicsPrice]
+    let thumbnail: ComicsThumbnail
 
     enum CodingKeys: String, CodingKey {
-        case id, name
+        case id, title
         case resultDescription = "description"
-        case thumbnail
+        case prices, thumbnail
     }
 
 }

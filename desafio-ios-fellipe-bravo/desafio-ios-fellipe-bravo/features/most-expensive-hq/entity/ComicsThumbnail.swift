@@ -5,18 +5,14 @@
 
 import Foundation
 
-struct Thumbnail: Codable {
+struct ComicsThumbnail: Codable {
 
     let path: String
-    let thumbnailExtension: Extension
+    let thumbnailExtension: ComicsThumbnailExtension
 
     enum CodingKeys: String, CodingKey {
         case path
         case thumbnailExtension = "extension"
-    }
-
-    func getListURL() -> URL? {
-        URL(string: "\(path)/standard_fantastic.\(thumbnailExtension)")
     }
 
     func getDetailsURL() -> URL? {
@@ -25,7 +21,7 @@ struct Thumbnail: Codable {
 
 }
 
-enum Extension: String, Codable {
+enum ComicsThumbnailExtension: String, Codable {
 
     case jpg = "jpg"
     case gif = "gif"

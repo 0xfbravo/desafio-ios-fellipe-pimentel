@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HeroViewCell: UITableViewCell {
-    
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var heroImage: UIImageView!
-    
+
+    public static let xibName = "HeroViewCell"
+    public static let cellIdentifier = "heroViewCell"
+
+    @IBOutlet private weak var name: UILabel!
+    @IBOutlet private weak var heroImage: UIImageView!
+
+    func assemble(heroInformation: HeroInformation) {
+        self.name.text = heroInformation.name
+        print(heroInformation.thumbnail.getListURL())
+        self.heroImage.kf.setImage(with: heroInformation.thumbnail.getListURL())
+    }
+
 }

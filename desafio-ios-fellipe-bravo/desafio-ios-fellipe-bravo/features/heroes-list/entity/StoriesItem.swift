@@ -1,14 +1,22 @@
 //
-//  StoriesItem.swift
-//  desafio-ios-fellipe-bravo
-//
-//  Created by Fellipe Bravo on 27/05/20.
-//  Copyright © 2020 Fellipe Bravo. All rights reserved.
+// Created by Fellipe Bravo on 28/05/20.
+// Copyright (c) 2020 Fellipe Bravo. All rights reserved.
 //
 
 import Foundation
 
-// MARK: - StoriesItem
 struct StoriesItem: Codable {
-    let resourceURI, name, type: String
+
+    let resourceURI: String
+    let name: String
+    let type: ItemType
+
+}
+
+enum ItemType: String, Codable {
+
+    case cover = "cover"
+    case empty = ""
+    case interiorStory = "interiorStory"
+
 }

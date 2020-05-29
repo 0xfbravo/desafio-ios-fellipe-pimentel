@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 final class HeroesListInteractor {
     
@@ -20,5 +21,9 @@ final class HeroesListInteractor {
 
 // MARK: - Protocol
 extension HeroesListInteractor: HeroesListInteractorProtocol {
-    
+
+    func getHeroesList(offset: Int, limit: Int) -> Observable<MarvelHeroListResponse> {
+        self.repository.getHeroesList(offset: offset, limit: limit)
+    }
+
 }

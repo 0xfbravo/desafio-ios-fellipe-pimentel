@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,6 +48,9 @@
 		078A420A247E12D700228AA3 /* StoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4209247E12D700228AA3 /* StoriesItem.swift */; };
 		078A420C247E12E100228AA3 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A420B247E12E100228AA3 /* Thumbnail.swift */; };
 		078A420E247E12F000228AA3 /* URLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A420D247E12F000228AA3 /* URLElement.swift */; };
+		078A4210247E162E00228AA3 /* MarvelGatewayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A420F247E162E00228AA3 /* MarvelGatewayManager.swift */; };
+		078A4212247E166900228AA3 /* MarvelGatewayManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4211247E166900228AA3 /* MarvelGatewayManagerProtocol.swift */; };
+		078A4214247E18B600228AA3 /* MarvelGateway.plist in Resources */ = {isa = PBXBuildFile; fileRef = 078A4213247E18B600228AA3 /* MarvelGateway.plist */; };
 		6C76828A9CCCB5D329309D01 /* Pods_desafio_ios_fellipe_bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CF837D589D9E568978BD99 /* Pods_desafio_ios_fellipe_bravo.framework */; };
 		E33523CAC72878BAE61933E5 /* Pods_desafio_ios_fellipe_bravoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD4333931350BBEF514A5A8 /* Pods_desafio_ios_fellipe_bravoTests.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +120,9 @@
 		078A4209247E12D700228AA3 /* StoriesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesItem.swift; sourceTree = "<group>"; };
 		078A420B247E12E100228AA3 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		078A420D247E12F000228AA3 /* URLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLElement.swift; sourceTree = "<group>"; };
+		078A420F247E162E00228AA3 /* MarvelGatewayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelGatewayManager.swift; sourceTree = "<group>"; };
+		078A4211247E166900228AA3 /* MarvelGatewayManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelGatewayManagerProtocol.swift; sourceTree = "<group>"; };
+		078A4213247E18B600228AA3 /* MarvelGateway.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MarvelGateway.plist; sourceTree = "<group>"; };
 		0AD4333931350BBEF514A5A8 /* Pods_desafio_ios_fellipe_bravoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_fellipe_bravoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2724B1551BF64A7D389F9C2B /* Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E24645D2F52957A55018955 /* Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -435,6 +441,7 @@
 		07830C60247B2504002A8FC6 /* managers */ = {
 			isa = PBXGroup;
 			children = (
+				078A4218247E20D000228AA3 /* marvel */,
 			);
 			path = managers;
 			sourceTree = "<group>";
@@ -447,6 +454,16 @@
 				078A41F5247DF27800228AA3 /* MostExpensiveHqLocalDataManager.swift */,
 			);
 			path = repository;
+			sourceTree = "<group>";
+		};
+		078A4218247E20D000228AA3 /* marvel */ = {
+			isa = PBXGroup;
+			children = (
+				078A4213247E18B600228AA3 /* MarvelGateway.plist */,
+				078A420F247E162E00228AA3 /* MarvelGatewayManager.swift */,
+				078A4211247E166900228AA3 /* MarvelGatewayManagerProtocol.swift */,
+			);
+			path = marvel;
 			sourceTree = "<group>";
 		};
 		955D73AD340357B5D54C38AB /* Frameworks */ = {
@@ -483,6 +500,7 @@
 				07830BD0247AE7C0002A8FC6 /* Sources */,
 				07830BD1247AE7C0002A8FC6 /* Frameworks */,
 				07830BD2247AE7C0002A8FC6 /* Resources */,
+				53368A0302F1C12B3860219D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -501,6 +519,7 @@
 				07830BE9247AE7C5002A8FC6 /* Sources */,
 				07830BEA247AE7C5002A8FC6 /* Frameworks */,
 				07830BEB247AE7C5002A8FC6 /* Resources */,
+				7CFCB755453FB9FA978EF8A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,6 +539,7 @@
 				07830BF4247AE7C5002A8FC6 /* Sources */,
 				07830BF5247AE7C5002A8FC6 /* Frameworks */,
 				07830BF6247AE7C5002A8FC6 /* Resources */,
+				AAFA414F437F5F4533191178 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -579,6 +599,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078A4214247E18B600228AA3 /* MarvelGateway.plist in Resources */,
 				078A41FA247DF2DE00228AA3 /* MostExpensiveHq.storyboard in Resources */,
 				07830BE7247AE7C5002A8FC6 /* LaunchScreen.storyboard in Resources */,
 				07830BE4247AE7C5002A8FC6 /* Assets.xcassets in Resources */,
@@ -669,6 +690,57 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		53368A0302F1C12B3860219D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravo/Pods-desafio-ios-fellipe-bravo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravo/Pods-desafio-ios-fellipe-bravo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravo/Pods-desafio-ios-fellipe-bravo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CFCB755453FB9FA978EF8A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravoTests/Pods-desafio-ios-fellipe-bravoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravoTests/Pods-desafio-ios-fellipe-bravoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravoTests/Pods-desafio-ios-fellipe-bravoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAFA414F437F5F4533191178 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests/Pods-desafio-ios-fellipe-bravo-desafio-ios-fellipe-bravoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -701,9 +773,11 @@
 				078A41F8247DF2BC00228AA3 /* MostExpensiveHqViewController.swift in Sources */,
 				078A41ED247DF15E00228AA3 /* MostExpensiveHqPresenter.swift in Sources */,
 				078A41F6247DF27800228AA3 /* MostExpensiveHqLocalDataManager.swift in Sources */,
+				078A4210247E162E00228AA3 /* MarvelGatewayManager.swift in Sources */,
 				078A41FC247E055100228AA3 /* HeroViewCell.swift in Sources */,
 				078A420E247E12F000228AA3 /* URLElement.swift in Sources */,
 				07830C5F247B2488002A8FC6 /* HeroesListRepository.swift in Sources */,
+				078A4212247E166900228AA3 /* MarvelGatewayManagerProtocol.swift in Sources */,
 				07830C5B247B213F002A8FC6 /* HeroesListProtocols.swift in Sources */,
 				07830C57247B1EF3002A8FC6 /* HeroesListRemoteDataManager.swift in Sources */,
 				07830BD8247AE7C0002A8FC6 /* AppDelegate.swift in Sources */,

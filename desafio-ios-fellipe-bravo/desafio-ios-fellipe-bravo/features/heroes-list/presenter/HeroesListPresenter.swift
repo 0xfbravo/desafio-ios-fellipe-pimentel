@@ -25,4 +25,14 @@ final class HeroesListPresenter {
 // MARK: - Protocol
 extension HeroesListPresenter: HeroesListPresenterProtocol {
 
+    func getHeroesList() {
+        interactor
+                .getHeroesList(offset: 0, limit: 10)
+                .subscribe(onNext: { [weak self] response in
+                    print(response)
+                }, onError: { [weak self] error in
+                    print(error)
+                })
+    }
+
 }

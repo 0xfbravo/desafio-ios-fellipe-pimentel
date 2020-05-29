@@ -22,5 +22,9 @@ final class HeroesListRepository {
 
 // MARK: - Protocol
 extension HeroesListRepository: HeroesListRepositoryProtocol {
-    
+
+    func getHeroesList(offset: Int, limit: Int) {
+        self.remoteDataManager.getHeroesList(offset: offset, limit: limit)
+    }
+
 }

@@ -1,14 +1,21 @@
 //
-//  URLElement.swift
-//  desafio-ios-fellipe-bravo
-//
-//  Created by Fellipe Bravo on 27/05/20.
-//  Copyright © 2020 Fellipe Bravo. All rights reserved.
+// Created by Fellipe Bravo on 28/05/20.
+// Copyright (c) 2020 Fellipe Bravo. All rights reserved.
 //
 
 import Foundation
 
-// MARK: - URLElement
 struct URLElement: Codable {
-    let type, url: String
+
+    let type: URLType
+    let url: String
+
+}
+
+enum URLType: String, Codable {
+
+    case comiclink = "comiclink"
+    case detail = "detail"
+    case wiki = "wiki"
+
 }

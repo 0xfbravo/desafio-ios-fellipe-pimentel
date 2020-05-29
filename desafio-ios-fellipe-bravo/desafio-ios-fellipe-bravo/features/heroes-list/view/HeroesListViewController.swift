@@ -26,6 +26,7 @@ class HeroesListViewController: UIViewController {
     private func assembleUI() {
         heroesListTableView.delegate = self
         heroesListTableView.dataSource = self
+        presenter.getHeroesList()
     }
     
     // MARK: - Actions

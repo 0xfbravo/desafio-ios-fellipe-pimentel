@@ -9,7 +9,9 @@ Todos os módulos seguem os padrões da [VIPER Architecture](https://medium.com/
 
 
 #### Preview
-// TODO: Adicionar prints
+![characters-list](/assets/characters-list.png?raw=true "Characters List")
+![character-detail](/assets/character-detail.png?raw=true "Character's Detail")
+![most-expensive-hq](/assets/most-expensive-hq.png?raw=true "Most expensive HQ")
 
 ---
 #### Estrutura do Projeto

@@ -1,5 +1,5 @@
 //
-//  HeroesListRouter.swift
+//  CharactersListRouter.swift
 //  desafio-ios-fellipe-bravo
 //
 //  Created by Fellipe Bravo on 24/05/20.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-final class HeroesListRouter: BaseRouter {
+final class CharactersListRouter: BaseRouter {
     
 }
 
 // MARK: - Protocol
-extension HeroesListRouter: HeroesListRouterProtocol {
+extension CharactersListRouter: CharactersListRouterProtocol {
     
 }

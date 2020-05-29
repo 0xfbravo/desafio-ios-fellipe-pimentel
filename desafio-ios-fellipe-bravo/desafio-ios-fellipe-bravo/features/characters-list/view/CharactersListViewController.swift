@@ -32,12 +32,12 @@ class HeroesListViewController: UIViewController {
     private func assembleUI() {
         heroesListTableView.rx.setDelegate(self).disposed(by: presenter.disposeBag)
 
-        let heroViewCellXib = UINib(nibName: HeroViewCell.xibName, bundle: nil)
-        heroesListTableView.register(heroViewCellXib, forCellReuseIdentifier: HeroViewCell.cellIdentifier)
+        let heroViewCellXib = UINib(nibName: CharacterViewCell.xibName, bundle: nil)
+        heroesListTableView.register(heroViewCellXib, forCellReuseIdentifier: CharacterViewCell.cellIdentifier)
 
-        presenter.heroesList.bind(to: heroesListTableView.rx.items(cellIdentifier: HeroViewCell.cellIdentifier, cellType: HeroViewCell.self)) {
-            (row: Int, item: HeroInformation, cell: HeroViewCell) in
-            cell.assemble(heroInformation: item)
+        presenter.heroesList.bind(to: heroesListTableView.rx.items(cellIdentifier: CharacterViewCell.cellIdentifier, cellType: CharacterViewCell.self)) {
+            (row: Int, item: CharacterInformation, cell: CharacterViewCell) in
+            cell.assemble(characterInformation: item)
         }.disposed(by: presenter.disposeBag)
 
         presenter.getHeroesList()

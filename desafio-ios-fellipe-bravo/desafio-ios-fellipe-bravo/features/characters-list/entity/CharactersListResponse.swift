@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct HeroListResponse: Codable {
+struct CharactersListResponse: Codable {
 
     let code: Int64
     let status, copyright, attributionText, attributionHTML: String

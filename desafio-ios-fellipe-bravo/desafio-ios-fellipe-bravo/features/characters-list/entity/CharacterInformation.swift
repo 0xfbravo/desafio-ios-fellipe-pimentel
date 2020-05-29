@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct HeroInformation: Codable {
+struct CharacterInformation: Codable {
 
     let id: Int64
     let name, resultDescription: String

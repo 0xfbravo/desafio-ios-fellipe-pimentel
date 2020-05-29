@@ -1,5 +1,5 @@
 //
-//  HeroesListEndpoints.swift
+//  CharactersListEndpoints.swift
 //  desafio-ios-fellipe-bravo
 //
 //  Created by Fellipe Bravo on 27/05/20.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum HeroesListEndpoints {
-    case getHeroesList;
+enum CharactersListEndpoints {
+    case getCharactersList;
 
     var path: String {
         switch self {
-            case .getHeroesList: return "/v1/public/characters"
+            case .getCharactersList: return "/v1/public/characters"
         }
     }
 

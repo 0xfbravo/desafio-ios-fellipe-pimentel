@@ -11,7 +11,7 @@ import Alamofire
 import RxAlamofire
 import RxSwift
 
-final class HeroesListRemoteDataManager {
+final class CharactersListRemoteDataManager {
     
     private let requestManager: RequestManagerProtocol
     private let decoder: JSONDecoder
@@ -25,19 +25,19 @@ final class HeroesListRemoteDataManager {
 }
 
 // MARK: - Protocol
-extension HeroesListRemoteDataManager: HeroesListRemoteDataManagerProtocol {
+extension CharactersListRemoteDataManager: CharactersListRemoteDataManagerProtocol {
     
-    func getHeroesList(offset: Int = 0, limit: Int = 20) -> Observable<HeroListResponse> {
+    func getCharactersList(offset: Int = 0, limit: Int = 20) -> Observable<CharactersListResponse> {
         let parameters: [String: Any] = [
             "offset": offset,
             "limit": limit
         ]
         
         return requestManager
-                .doRequest(.get, path: HeroesListEndpoints.getHeroesList.path, parameters: parameters, encoding: URLEncoding.default, headers: nil)
-                .flatMap { (data) -> Observable<HeroListResponse> in
-                    let marvelHeroListResponse = try? self.decoder.decode(HeroListResponse.self, from: data)
-                    return .just(marvelHeroListResponse!)
+                .doRequest(.get, path: CharactersListEndpoints.getCharactersList.path, parameters: parameters, encoding: URLEncoding.default, headers: nil)
+                .flatMap { (data) -> Observable<CharactersListResponse> in
+                    let marvelCharactersListResponse = try? self.decoder.decode(CharactersListResponse.self, from: data)
+                    return .just(marvelCharactersListResponse!)
                 }
     }
     

@@ -1,5 +1,5 @@
 //
-//  HeroesListLocalDataManager.swift
+//  CharactersListLocalDataManager.swift
 //  desafio-ios-fellipe-bravo
 //
 //  Created by Fellipe Bravo on 24/05/20.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-final class HeroesListLocalDataManager {
+final class CharactersListLocalDataManager {
     
 }
 
 // MARK: - Protocol
-extension HeroesListLocalDataManager: HeroesListLocalDataManagerProtocol {
+extension CharactersListLocalDataManager: CharactersListLocalDataManagerProtocol {
     
 }

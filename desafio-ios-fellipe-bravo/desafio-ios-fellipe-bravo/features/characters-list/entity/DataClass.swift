@@ -8,6 +8,6 @@ import Foundation
 struct DataClass: Codable {
 
     let offset, limit, total, count: Int64
-    let results: [HeroInformation]
+    let results: [CharacterInformation]
 
 }

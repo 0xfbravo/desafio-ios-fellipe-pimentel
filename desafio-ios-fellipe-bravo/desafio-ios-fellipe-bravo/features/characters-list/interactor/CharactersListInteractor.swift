@@ -19,13 +19,21 @@ final class CharactersListInteractor {
     
 }
 
+enum CharactersListError: Error {
+    case emptyList, conversionError
+}
+
 // MARK: - Protocol
 extension CharactersListInteractor: CharactersListInteractorProtocol {
 
     func getCharactersList(offset: Int, limit: Int) -> Observable<[CharacterInformation]> {
         self.repository.getCharactersList(offset: offset, limit: limit)
                 .flatMap { (marvelCharactersListResponse) -> Observable<[CharacterInformation]> in
-                    .just(marvelCharactersListResponse.data.results)
+                    if (marvelCharactersListResponse.data.results.isEmpty) {
+                        throw CharactersListError.emptyList
+                    }
+
+                    return .just(marvelCharactersListResponse.data.results)
                 }
     }
 

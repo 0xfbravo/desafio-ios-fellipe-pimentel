@@ -35,9 +35,10 @@ extension CharactersListRemoteDataManager: CharactersListRemoteDataManagerProtoc
         
         return requestManager
                 .doRequest(.get, path: CharactersListEndpoints.getCharactersList.path, parameters: parameters, encoding: URLEncoding.default, headers: nil)
-                .flatMap { (data) -> Observable<CharactersListResponse> in
-                    let marvelCharactersListResponse = try? self.decoder.decode(CharactersListResponse.self, from: data)
-                    return .just(marvelCharactersListResponse!)
+                .flatMap { [weak self] (data) -> Observable<CharactersListResponse> in
+                    guard let marvelCharactersListResponse = try? self?.decoder.decode(CharactersListResponse.self, from: data)
+                            else { throw CharactersListError.conversionError }
+                    return .just(marvelCharactersListResponse)
                 }
     }
     

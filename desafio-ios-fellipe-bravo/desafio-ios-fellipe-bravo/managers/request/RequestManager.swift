@@ -23,16 +23,7 @@ final class RequestManager {
         self.encoder = encoder
         self.decoder = decoder
         self.marvelGatewayManager = marvelGatewayManager
-        self.encoder.dateEncodingStrategy = .formatted(self.marvelDateFormat)
-        self.decoder.dateDecodingStrategy = .formatted(self.marvelDateFormat)
     }
-
-    // TODO: Convert strange Marvel's date format: 2014-04-29T14:18:17-0400
-    private let marvelDateFormat: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'-0400'"
-        return formatter
-    }()
 
     private func getBasicParameters() -> [String: Any] {
         let requestTimestamp = Date()

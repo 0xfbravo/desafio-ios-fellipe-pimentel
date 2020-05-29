@@ -19,7 +19,8 @@ final class CharactersListPresenter {
     var disposeBag = DisposeBag()
     var charactersList = BehaviorRelay<[CharacterInformation]>(value: [])
     var offset = 0
-    var pageSize = 58
+    var pageSize = 20
+    var isGettingCharactersList = false
     
     init(view: CharactersListViewProtocol, router: CharactersListRouterProtocol, interactor: CharactersListInteractorProtocol) {
         self.view = view
@@ -33,16 +34,21 @@ final class CharactersListPresenter {
 extension CharactersListPresenter: CharactersListPresenterProtocol {
 
     func getCharactersList() {
+        self.isGettingCharactersList = true
         let currentOffset = self.offset
         let nextOffset = self.offset + self.pageSize
 
         interactor
                 .getCharactersList(offset: currentOffset, limit: pageSize)
-                .subscribe(onNext: { marvelCharactersList in
-                    self.offset = nextOffset
-                    self.charactersList.accept(marvelCharactersList)
+                .subscribe(onNext: { [weak self] marvelCharactersList in
+                    self?.isGettingCharactersList = false
+                    self?.offset = nextOffset
+                    self?.charactersList.accept(self!.charactersList.value + marvelCharactersList)
+
                     print(marvelCharactersList)
-                }, onError: { error in
+                }, onError: { [weak self] error in
+                    self?.isGettingCharactersList = false
+
                     print(error)
                 })
                 .disposed(by: disposeBag)

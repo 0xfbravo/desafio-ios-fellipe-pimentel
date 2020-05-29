@@ -19,6 +19,7 @@ protocol CharactersListViewProtocol: class {
 protocol CharactersListPresenterProtocol {
     var disposeBag: DisposeBag { get }
     var charactersList: BehaviorRelay<[CharacterInformation]> { get }
+    var isGettingCharactersList: Bool { get }
 
     func getCharactersList()
 }

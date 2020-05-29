@@ -40,20 +40,15 @@
 		079C3620247EB15A009E2459 /* RequestManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C361F247EB15A009E2459 /* RequestManagerProtocol.swift */; };
 		07CCEB3D2480BEE80083AFA3 /* CharacterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CCEB3C2480BEE80083AFA3 /* CharacterViewCell.xib */; };
 		6C76828A9CCCB5D329309D01 /* Pods_desafio_ios_fellipe_bravo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CF837D589D9E568978BD99 /* Pods_desafio_ios_fellipe_bravo.framework */; };
-		B300C20A239C0F2F894E183F /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CDDE18FE3D94DDA50C56 /* Comics.swift */; };
 		B300C36AF3321ABC3475EE25 /* CharacterInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CA68CE4A4B7FC05C391A /* CharacterInformation.swift */; };
-		B300C373CC8D3EA8DFE2A96D /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CEEC4543ABFE3A68BCD5 /* Stories.swift */; };
 		B300C3F758264F25F2D065C7 /* CharactersListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C95F00E663AEFDD5C8C6 /* CharactersListRepository.swift */; };
 		B300C59E58B1A273320B8AB7 /* CharactersListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C1FCAC5E48E179957CEA /* CharactersListLocalDataManager.swift */; };
 		B300C7C1A738BA487D247490 /* CharactersListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C3DB8028D99547AFB8AD /* CharactersListRemoteDataManager.swift */; };
-		B300C8E991699D54811FB337 /* URLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CC8BB45B942452FD21F4 /* URLElement.swift */; };
 		B300C933C019062E9DB7C1BB /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C368DB6618CAC2AE2787 /* DataClass.swift */; };
 		B300C96457321729DACC3E18 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CBED0AE0000229B4670F /* Thumbnail.swift */; };
 		B300CACA2C4E25F43A614638 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C17542D375EC03D7C42B /* ErrorManager.swift */; };
 		B300CAF6F526F4B2A64A0359 /* MostExpensiveHqRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C3236D4046598E4F015A /* MostExpensiveHqRepository.swift */; };
 		B300CBAF758CD28618B45BE5 /* CharactersListEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CCA995B07FA2E8E5A861 /* CharactersListEndpoints.swift */; };
-		B300CC41E71FABC38985946C /* StoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C05CF626F9AE3E799C11 /* StoriesItem.swift */; };
-		B300CC908AE717597FEAE363 /* ComicsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C63598C2952C0FCC57C1 /* ComicsItem.swift */; };
 		B300CD4B041D8B7CAC11A569 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C92859ED35611D375592 /* String+MD5.swift */; };
 		B300CE497A539BF539551CA5 /* MostExpensiveHqRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300CDC0BD89D80468E89614 /* MostExpensiveHqRemoteDataManager.swift */; };
 		B300CE4CBFC2344D099B7049 /* CharactersListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300C31D5D1602728741047A /* CharactersListResponse.swift */; };
@@ -123,7 +118,6 @@
 		75EFDBA4322AE3842262E974 /* Pods-desafio-ios-fellipe-bravoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravoTests.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravoTests/Pods-desafio-ios-fellipe-bravoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F28798F1B6989D51089EE3E /* Pods-desafio-ios-fellipe-bravo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo.release.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo/Pods-desafio-ios-fellipe-bravo.release.xcconfig"; sourceTree = "<group>"; };
 		AD28D850F15BA9F5024ED26D /* Pods-desafio-ios-fellipe-bravoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravoTests.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravoTests/Pods-desafio-ios-fellipe-bravoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B300C05CF626F9AE3E799C11 /* StoriesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesItem.swift; sourceTree = "<group>"; };
 		B300C17542D375EC03D7C42B /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		B300C1FCAC5E48E179957CEA /* CharactersListLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListLocalDataManager.swift; sourceTree = "<group>"; };
 		B300C2A204D9DC31FDAEE942 /* MostExpensiveHqLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqLocalDataManager.swift; sourceTree = "<group>"; };
@@ -131,16 +125,12 @@
 		B300C3236D4046598E4F015A /* MostExpensiveHqRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqRepository.swift; sourceTree = "<group>"; };
 		B300C368DB6618CAC2AE2787 /* DataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		B300C3DB8028D99547AFB8AD /* CharactersListRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListRemoteDataManager.swift; sourceTree = "<group>"; };
-		B300C63598C2952C0FCC57C1 /* ComicsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsItem.swift; sourceTree = "<group>"; };
 		B300C92859ED35611D375592 /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		B300C95F00E663AEFDD5C8C6 /* CharactersListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListRepository.swift; sourceTree = "<group>"; };
 		B300CA68CE4A4B7FC05C391A /* CharacterInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterInformation.swift; sourceTree = "<group>"; };
 		B300CBED0AE0000229B4670F /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
-		B300CC8BB45B942452FD21F4 /* URLElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLElement.swift; sourceTree = "<group>"; };
 		B300CCA995B07FA2E8E5A861 /* CharactersListEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListEndpoints.swift; sourceTree = "<group>"; };
 		B300CDC0BD89D80468E89614 /* MostExpensiveHqRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostExpensiveHqRemoteDataManager.swift; sourceTree = "<group>"; };
-		B300CDDE18FE3D94DDA50C56 /* Comics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
-		B300CEEC4543ABFE3A68BCD5 /* Stories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 		B5CF837D589D9E568978BD99 /* Pods_desafio_ios_fellipe_bravo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios_fellipe_bravo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32CDC77F9314B3151CFEE53 /* Pods-desafio-ios-fellipe-bravo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios-fellipe-bravo.debug.xcconfig"; path = "Target Support Files/Pods-desafio-ios-fellipe-bravo/Pods-desafio-ios-fellipe-bravo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -421,12 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				B300C31D5D1602728741047A /* CharactersListResponse.swift */,
-				B300CC8BB45B942452FD21F4 /* URLElement.swift */,
 				B300CBED0AE0000229B4670F /* Thumbnail.swift */,
-				B300C05CF626F9AE3E799C11 /* StoriesItem.swift */,
-				B300CEEC4543ABFE3A68BCD5 /* Stories.swift */,
-				B300C63598C2952C0FCC57C1 /* ComicsItem.swift */,
-				B300CDDE18FE3D94DDA50C56 /* Comics.swift */,
 				B300CA68CE4A4B7FC05C391A /* CharacterInformation.swift */,
 				B300C368DB6618CAC2AE2787 /* DataClass.swift */,
 			);
@@ -840,12 +825,7 @@
 				B300CBAF758CD28618B45BE5 /* CharactersListEndpoints.swift in Sources */,
 				B300CD4B041D8B7CAC11A569 /* String+MD5.swift in Sources */,
 				B300CE4CBFC2344D099B7049 /* CharactersListResponse.swift in Sources */,
-				B300C8E991699D54811FB337 /* URLElement.swift in Sources */,
 				B300C96457321729DACC3E18 /* Thumbnail.swift in Sources */,
-				B300CC41E71FABC38985946C /* StoriesItem.swift in Sources */,
-				B300C373CC8D3EA8DFE2A96D /* Stories.swift in Sources */,
-				B300CC908AE717597FEAE363 /* ComicsItem.swift in Sources */,
-				B300C20A239C0F2F894E183F /* Comics.swift in Sources */,
 				B300C36AF3321ABC3475EE25 /* CharacterInformation.swift in Sources */,
 				B300C933C019062E9DB7C1BB /* DataClass.swift in Sources */,
 			);

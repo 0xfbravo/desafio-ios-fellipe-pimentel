@@ -54,4 +54,13 @@ extension CharactersListViewController: CharactersListViewProtocol {
 
 extension CharactersListViewController: UITableViewDelegate {
 
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let height = scrollView.frame.size.height
+        let contentYoffset = scrollView.contentOffset.y
+        let distanceFromBottom = scrollView.contentSize.height - contentYoffset
+        if (distanceFromBottom < height && !presenter.isGettingCharactersList) {
+            presenter.getCharactersList()
+        }
+    }
+
 }

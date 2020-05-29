@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 final class MostExpensiveHqPresenter {
     
@@ -15,6 +17,8 @@ final class MostExpensiveHqPresenter {
     var interactor: MostExpensiveHqInteractorProtocol!
 
     var characterDetail: CharacterInformation!
+    var disposeBag = DisposeBag()
+    var mostExpensiveHq = PublishRelay<ComicsInformation>()
 
     init(view: MostExpensiveHqViewProtocol, router: MostExpensiveHqRouterProtocol, interactor: MostExpensiveHqInteractorProtocol) {
         self.view = view
@@ -28,7 +32,16 @@ final class MostExpensiveHqPresenter {
 extension MostExpensiveHqPresenter: MostExpensiveHqPresenterProtocol {
 
     func getMostExpensiveComic() {
+        interactor
+                .getCharacterComicsList(characterId: characterDetail.id)
+                .subscribe(onNext: { [weak self] mostExpensiveHq in
+                    self?.mostExpensiveHq.accept(mostExpensiveHq)
 
+                    print(mostExpensiveHq)
+                }, onError: { [weak self] error in
+                    print(error)
+                })
+                .disposed(by: disposeBag)
     }
 
 }

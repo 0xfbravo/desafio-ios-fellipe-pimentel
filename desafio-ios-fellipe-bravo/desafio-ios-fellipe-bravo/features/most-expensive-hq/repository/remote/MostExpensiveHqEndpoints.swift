@@ -13,7 +13,7 @@ enum MostExpensiveHqEndpoints {
 
     var path: String {
         switch self {
-            case .getComicsList: return "/v1/public/characters/%1$/comics"
+            case .getComicsList: return "/v1/public/characters/%@/comics"
         }
     }
 

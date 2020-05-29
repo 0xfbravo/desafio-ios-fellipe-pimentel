@@ -33,7 +33,7 @@ extension MostExpensiveHqRemoteDataManager: MostExpensiveHqRemoteDataManagerProt
             "orderBy": "-onsaleDate"
         ]
 
-        let characterComicsPath = String(format: MostExpensiveHqEndpoints.getComicsList.path, characterId)
+        let characterComicsPath = String(format: MostExpensiveHqEndpoints.getComicsList.path, String(characterId))
         return requestManager
                 .doRequest(.get, path: characterComicsPath, parameters: parameters, encoding: URLEncoding.default, headers: nil)
                 .flatMap { [weak self] (data) -> Observable<ComicsListResponse> in

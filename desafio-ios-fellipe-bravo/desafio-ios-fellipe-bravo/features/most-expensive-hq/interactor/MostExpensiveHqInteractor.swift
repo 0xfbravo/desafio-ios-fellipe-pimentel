@@ -26,14 +26,20 @@ enum MostExpensiveHqError: Error {
 // MARK: - Protocol
 extension MostExpensiveHqInteractor: MostExpensiveHqInteractorProtocol {
 
-    func getCharacterComicsList(characterId: Int) -> Observable<[ComicsInformation]> {
+    func getCharacterComicsList(characterId: Int) -> Observable<ComicsInformation> {
         self.repository.getCharacterComicsList(characterId: characterId)
-                .flatMap { (characterComicsListResponse) -> Observable<[ComicsInformation]> in
+                .flatMap { (characterComicsListResponse) -> Observable<ComicsInformation> in
                     if (characterComicsListResponse.data.results.isEmpty) {
-                        throw CharactersListError.emptyList
+                        throw MostExpensiveHqError.emptyList
                     }
 
-                    return .just(characterComicsListResponse.data.results)
+                    let mostExpensiveHq = characterComicsListResponse.data.results.max(by: { comicA, comicB in
+                        let comicAHighestPrice = comicA.prices.max(by: { $0.price > $1.price })?.price
+                        let comicBHighestPrice = comicB.prices.max(by: { $0.price > $1.price })?.price
+                        return comicAHighestPrice! > comicBHighestPrice!
+                    })
+
+                    return .just(mostExpensiveHq!)
                 }
     }
 

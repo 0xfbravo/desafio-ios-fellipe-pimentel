@@ -18,13 +18,15 @@ protocol MostExpensiveHqViewProtocol: class {
 // MARK: - Presenter
 protocol MostExpensiveHqPresenterProtocol {
     var characterDetail: CharacterInformation! { get set }
+    var disposeBag: DisposeBag { get }
+    var mostExpensiveHq: PublishRelay<ComicsInformation> { get }
     
     func getMostExpensiveComic()
 }
 
 // MARK: - Interactor
 protocol MostExpensiveHqInteractorProtocol {
-    func getCharacterComicsList(characterId: Int) -> Observable<[ComicsInformation]>
+    func getCharacterComicsList(characterId: Int) -> Observable<ComicsInformation>
 }
 
 // MARK: - Router

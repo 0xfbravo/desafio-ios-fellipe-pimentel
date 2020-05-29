@@ -11,6 +11,7 @@ target 'desafio-ios-fellipe-bravo' do
   pod 'RxAlamofire'
   pod 'Kingfisher', '~> 5.14'
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+  pod 'UIImageColors'
 
   target 'desafio-ios-fellipe-bravoTests' do
     inherit! :search_paths

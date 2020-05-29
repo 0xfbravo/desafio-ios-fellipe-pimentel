@@ -18,6 +18,8 @@ protocol CharacterDetailViewProtocol: class {
 // MARK: - Presenter
 protocol CharacterDetailPresenterProtocol {
     var characterDetail: CharacterInformation! { get set }
+    
+    func handleOnMostExpensiveHqTouched()
 }
 
 // MARK: - Interactor

@@ -29,4 +29,8 @@ final class CharacterDetailPresenter {
 // MARK: - Protocol
 extension CharacterDetailPresenter: CharacterDetailPresenterProtocol {
 
+    func handleOnMostExpensiveHqTouched() {
+        self.router.openMostExpensiveHq(of: self.characterDetail)
+    }
+    
 }

@@ -38,7 +38,10 @@ class CharacterDetailViewController: UIViewController {
     }
     
     // MARK: - Actions
-
+    @IBAction func onTouchMostExpensiveHq(_ sender: Any) {
+        presenter.handleOnMostExpensiveHqTouched()
+    }
+    
 }
 
 // MARK: - Protocol

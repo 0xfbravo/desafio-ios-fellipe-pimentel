@@ -57,4 +57,5 @@ extension CharactersListPresenter: CharactersListPresenterProtocol {
     func handleOnCharacterSelected(characterInfo: CharacterInformation) {
         self.router.openDetails(of: characterInfo)
     }
+    
 }

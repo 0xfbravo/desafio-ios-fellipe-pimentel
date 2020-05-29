@@ -1,5 +1,5 @@
 //
-//  HeroesListViewController.swift
+//  CharactersListViewController.swift
 //  desafio-ios-fellipe-bravo
 //
 //  Created by Fellipe Bravo on 24/05/20.
@@ -10,17 +10,17 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class HeroesListViewController: UIViewController {
+class CharactersListViewController: UIViewController {
     
-    var presenter: HeroesListPresenterProtocol!
+    var presenter: CharactersListPresenterProtocol!
     
     // MARK: - Outlets
-    @IBOutlet private weak var heroesListTableView: UITableView!
+    @IBOutlet private weak var charactersListTableView: UITableView!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = HeroesListFeature.assemblePresenter(view: self)
+        presenter = CharactersListFeature.assemblePresenter(view: self)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -30,17 +30,17 @@ class HeroesListViewController: UIViewController {
 
     // MARK: - UI
     private func assembleUI() {
-        heroesListTableView.rx.setDelegate(self).disposed(by: presenter.disposeBag)
+        charactersListTableView.rx.setDelegate(self).disposed(by: presenter.disposeBag)
 
-        let heroViewCellXib = UINib(nibName: CharacterViewCell.xibName, bundle: nil)
-        heroesListTableView.register(heroViewCellXib, forCellReuseIdentifier: CharacterViewCell.cellIdentifier)
+        let characterViewCellXib = UINib(nibName: CharacterViewCell.xibName, bundle: nil)
+        charactersListTableView.register(characterViewCellXib, forCellReuseIdentifier: CharacterViewCell.cellIdentifier)
 
-        presenter.heroesList.bind(to: heroesListTableView.rx.items(cellIdentifier: CharacterViewCell.cellIdentifier, cellType: CharacterViewCell.self)) {
+        presenter.charactersList.bind(to: charactersListTableView.rx.items(cellIdentifier: CharacterViewCell.cellIdentifier, cellType: CharacterViewCell.self)) {
             (row: Int, item: CharacterInformation, cell: CharacterViewCell) in
             cell.assemble(characterInformation: item)
         }.disposed(by: presenter.disposeBag)
 
-        presenter.getHeroesList()
+        presenter.getCharactersList()
     }
     
     // MARK: - Actions
@@ -48,10 +48,10 @@ class HeroesListViewController: UIViewController {
 }
 
 // MARK: - Protocol
-extension HeroesListViewController: HeroesListViewProtocol {
+extension CharactersListViewController: CharactersListViewProtocol {
     
 }
 
-extension HeroesListViewController: UITableViewDelegate {
+extension CharactersListViewController: UITableViewDelegate {
 
 }
